@@ -1,3 +1,5 @@
 CREATE DATABASE TVREMOTE
 GO
 USE TVREMOTE
+GO
+--create van tabellen enzoooo
