@@ -16,6 +16,9 @@ namespace Television
         private Worker()
         {
             worker.DoWork += Worker_DoWork;
+
+            Settings.Default["Volume"] = 21;
+            Settings.Default.Save();
         }
 
         /// <summary>
@@ -30,6 +33,10 @@ namespace Television
         {
             while (TvIsOn)
             {
+                
+                
+                
+                
                 // Code To get the required action for your tv.
             }
         }

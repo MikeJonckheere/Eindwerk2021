@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mjonckheere\\Documents\\CSHARP\\SynologyDrive\\EINDWERK DECEMBER\\Television\\Television\\Television.csproj": {}
+    "C:\\Users\\mjonckheere\\Documents\\CSHARP\\SynologyDrive\\EINDWERK2021\\Television\\Television\\Television.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mjonckheere\\Documents\\CSHARP\\SynologyDrive\\EINDWERK DECEMBER\\Television\\Television\\Television.csproj": {
+    "C:\\Users\\mjonckheere\\Documents\\CSHARP\\SynologyDrive\\EINDWERK2021\\Television\\Television\\Television.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mjonckheere\\Documents\\CSHARP\\SynologyDrive\\EINDWERK DECEMBER\\Television\\Television\\Television.csproj",
+        "projectUniqueName": "C:\\Users\\mjonckheere\\Documents\\CSHARP\\SynologyDrive\\EINDWERK2021\\Television\\Television\\Television.csproj",
         "projectName": "Television",
-        "projectPath": "C:\\Users\\mjonckheere\\Documents\\CSHARP\\SynologyDrive\\EINDWERK DECEMBER\\Television\\Television\\Television.csproj",
+        "projectPath": "C:\\Users\\mjonckheere\\Documents\\CSHARP\\SynologyDrive\\EINDWERK2021\\Television\\Television\\Television.csproj",
         "packagesPath": "C:\\Users\\mjonckheere\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mjonckheere\\Documents\\CSHARP\\SynologyDrive\\EINDWERK DECEMBER\\Television\\Television\\obj\\",
+        "outputPath": "C:\\Users\\mjonckheere\\Documents\\CSHARP\\SynologyDrive\\EINDWERK2021\\Television\\Television\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

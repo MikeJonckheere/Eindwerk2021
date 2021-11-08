@@ -20,3 +20,25 @@ C:\Users\mjonckheere\Documents\CSHARP\SynologyDrive\EINDWERK DECEMBER\Television
 C:\Users\mjonckheere\Documents\CSHARP\SynologyDrive\EINDWERK DECEMBER\Television\Television\obj\Debug\net5.0-windows\ref\Television.dll
 C:\Users\mjonckheere\Documents\CSHARP\SynologyDrive\EINDWERK DECEMBER\Television\Television\obj\Debug\net5.0-windows\Television.pdb
 C:\Users\mjonckheere\Documents\CSHARP\SynologyDrive\EINDWERK DECEMBER\Television\Television\obj\Debug\net5.0-windows\Television.genruntimeconfig.cache
+C:\Users\mjonckheere\Documents\CSHARP\SynologyDrive\EINDWERK2021\Television\Television\bin\Debug\net5.0-windows\Television.exe
+C:\Users\mjonckheere\Documents\CSHARP\SynologyDrive\EINDWERK2021\Television\Television\bin\Debug\net5.0-windows\Television.deps.json
+C:\Users\mjonckheere\Documents\CSHARP\SynologyDrive\EINDWERK2021\Television\Television\bin\Debug\net5.0-windows\Television.runtimeconfig.json
+C:\Users\mjonckheere\Documents\CSHARP\SynologyDrive\EINDWERK2021\Television\Television\bin\Debug\net5.0-windows\Television.runtimeconfig.dev.json
+C:\Users\mjonckheere\Documents\CSHARP\SynologyDrive\EINDWERK2021\Television\Television\bin\Debug\net5.0-windows\Television.dll
+C:\Users\mjonckheere\Documents\CSHARP\SynologyDrive\EINDWERK2021\Television\Television\bin\Debug\net5.0-windows\ref\Television.dll
+C:\Users\mjonckheere\Documents\CSHARP\SynologyDrive\EINDWERK2021\Television\Television\bin\Debug\net5.0-windows\Television.pdb
+C:\Users\mjonckheere\Documents\CSHARP\SynologyDrive\EINDWERK2021\Television\Television\obj\Debug\net5.0-windows\Television.csproj.AssemblyReference.cache
+C:\Users\mjonckheere\Documents\CSHARP\SynologyDrive\EINDWERK2021\Television\Television\obj\Debug\net5.0-windows\MainWindow.g.cs
+C:\Users\mjonckheere\Documents\CSHARP\SynologyDrive\EINDWERK2021\Television\Television\obj\Debug\net5.0-windows\App.g.cs
+C:\Users\mjonckheere\Documents\CSHARP\SynologyDrive\EINDWERK2021\Television\Television\obj\Debug\net5.0-windows\Television_MarkupCompile.cache
+C:\Users\mjonckheere\Documents\CSHARP\SynologyDrive\EINDWERK2021\Television\Television\obj\Debug\net5.0-windows\Television_MarkupCompile.lref
+C:\Users\mjonckheere\Documents\CSHARP\SynologyDrive\EINDWERK2021\Television\Television\obj\Debug\net5.0-windows\MainWindow.baml
+C:\Users\mjonckheere\Documents\CSHARP\SynologyDrive\EINDWERK2021\Television\Television\obj\Debug\net5.0-windows\Television.g.resources
+C:\Users\mjonckheere\Documents\CSHARP\SynologyDrive\EINDWERK2021\Television\Television\obj\Debug\net5.0-windows\Television.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mjonckheere\Documents\CSHARP\SynologyDrive\EINDWERK2021\Television\Television\obj\Debug\net5.0-windows\Television.AssemblyInfoInputs.cache
+C:\Users\mjonckheere\Documents\CSHARP\SynologyDrive\EINDWERK2021\Television\Television\obj\Debug\net5.0-windows\Television.AssemblyInfo.cs
+C:\Users\mjonckheere\Documents\CSHARP\SynologyDrive\EINDWERK2021\Television\Television\obj\Debug\net5.0-windows\Television.csproj.CoreCompileInputs.cache
+C:\Users\mjonckheere\Documents\CSHARP\SynologyDrive\EINDWERK2021\Television\Television\obj\Debug\net5.0-windows\Television.dll
+C:\Users\mjonckheere\Documents\CSHARP\SynologyDrive\EINDWERK2021\Television\Television\obj\Debug\net5.0-windows\ref\Television.dll
+C:\Users\mjonckheere\Documents\CSHARP\SynologyDrive\EINDWERK2021\Television\Television\obj\Debug\net5.0-windows\Television.pdb
+C:\Users\mjonckheere\Documents\CSHARP\SynologyDrive\EINDWERK2021\Television\Television\obj\Debug\net5.0-windows\Television.genruntimeconfig.cache
