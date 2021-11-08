@@ -17,8 +17,7 @@ namespace Television
         {
             worker.DoWork += Worker_DoWork;
 
-            Settings.Default["Volume"] = 21;
-            Settings.Default.Save();
+        
         }
 
         /// <summary>
