@@ -16,8 +16,6 @@ namespace Television
         private Worker()
         {
             worker.DoWork += Worker_DoWork;
-
-        
         }
 
         /// <summary>
@@ -32,10 +30,6 @@ namespace Television
         {
             while (TvIsOn)
             {
-                
-                
-                
-                
                 // Code To get the required action for your tv.
             }
         }
