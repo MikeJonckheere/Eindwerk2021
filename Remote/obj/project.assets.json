@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mikej\\Documents\\CSHARP\\EINDWERK2021VastePC\\Remote\\Remote.csproj",
+      "projectUniqueName": "C:\\Users\\mikej\\Documents\\CSHARP\\EINDWERK2021VASTEPC\\Remote\\Remote.csproj",
       "projectName": "Remote",
-      "projectPath": "C:\\Users\\mikej\\Documents\\CSHARP\\EINDWERK2021VastePC\\Remote\\Remote.csproj",
+      "projectPath": "C:\\Users\\mikej\\Documents\\CSHARP\\EINDWERK2021VASTEPC\\Remote\\Remote.csproj",
       "packagesPath": "C:\\Users\\mikej\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mikej\\Documents\\CSHARP\\EINDWERK2021VastePC\\Remote\\obj\\",
+      "outputPath": "C:\\Users\\mikej\\Documents\\CSHARP\\EINDWERK2021VASTEPC\\Remote\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"

@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31729.503
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Remote", "Remote.csproj", "{3C37208B-6706-4BB2-B125-35B4C4FAA457}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Remote", "Remote.csproj", "{283531A5-3DF0-4C70-8185-41717B19359F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{3C37208B-6706-4BB2-B125-35B4C4FAA457}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3C37208B-6706-4BB2-B125-35B4C4FAA457}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3C37208B-6706-4BB2-B125-35B4C4FAA457}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3C37208B-6706-4BB2-B125-35B4C4FAA457}.Release|Any CPU.Build.0 = Release|Any CPU
+		{283531A5-3DF0-4C70-8185-41717B19359F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{283531A5-3DF0-4C70-8185-41717B19359F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{283531A5-3DF0-4C70-8185-41717B19359F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{283531A5-3DF0-4C70-8185-41717B19359F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {66EB51D9-2291-4CCB-913C-2642E6F53B0C}
+		SolutionGuid = {D0965C3A-04C4-4E02-8344-D6F6C044B616}
 	EndGlobalSection
 EndGlobal

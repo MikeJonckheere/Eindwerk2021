@@ -6,23 +6,4 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Page Include="App.xaml" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Compile Update="PROGRAM\Remote.Designer.cs">
-      <DesignTimeSharedInput>True</DesignTimeSharedInput>
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Remote.settings</DependentUpon>
-    </Compile>
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Update="PROGRAM\Remote.settings">
-      <Generator>SettingsSingleFileGenerator</Generator>
-      <LastGenOutput>Remote.Designer.cs</LastGenOutput>
-    </None>
-  </ItemGroup>
-
 </Project>
