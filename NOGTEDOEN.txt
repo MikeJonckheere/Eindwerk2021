@@ -1,0 +1,46 @@
+Zet uw naam bij wat je graag doet.
+
+ALS DE ON OFF KNOP OP OFF STAAT, ALLE KNOPPEN IN HET GRIJS. = ENABELD.
+
+
+Sql aanmaken met DB TV 				WAT DOET DIE SEND KNOP EXACT? vraag aan bjorn
+
+Tabel= 
+	status voor tv aan af
+	channel +- knop en cijfers
+	volume
+	source
+	...
+
+Frederik en Brecht.
+
+Remote solution.
+	
+	Folders maken voor repo, UI, program	
+
+	Numpad
+	Max kanaal 999 controle
+	Source popup		ALS DE SOURCE OP TV STAAT MAG ENKEL DE NUMPAD WERKEN, ANDERS NIET.
+	Settings popup
+	Knoppen + - volume
+	Knoppen +- CHANNEL
+	Textbox of list box als logging en info.
+
+
+Mike (kijken voor die logging methode)
+
+	
+
+TV solution					WORKER START AL SOLUTION START.
+	
+	
+	ON OFF POPUP.
+	Settings popup
+	Source popup (HDMI 1 en 2 + TV)
+	Knoppen + - volume
+	Knoppen +- CHANNEL
+	Via worker aantal lijnen bekijken, bij bijkomen van lijnen moet de channel etc aangepast worden.		@@IDENTITY ???
+	
+	
+
+
