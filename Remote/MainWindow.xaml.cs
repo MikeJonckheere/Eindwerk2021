@@ -24,5 +24,10 @@ namespace Remote
         {
             InitializeComponent();
         }
+
+        private void btn_Send_Click(object sender, RoutedEventArgs e)
+        {
+           
+        }
     }
 }
