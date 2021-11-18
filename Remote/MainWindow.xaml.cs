@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Remote.Program;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -27,7 +28,7 @@ namespace Remote
 
         private void btn_Send_Click(object sender, RoutedEventArgs e)
         {
-           
+           ProgRemote.send();
         }
     }
 }

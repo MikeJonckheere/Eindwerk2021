@@ -5,8 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Remote"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-
+        Title="MainWindow" Height="579" Width="311">
+    <Grid Margin="0,0,0,-6" HorizontalAlignment="Left" Width="310">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="153*"/>
+            <ColumnDefinition Width="157*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="btn_Send" Content="Button" HorizontalAlignment="Left" Margin="135,10,0,0" VerticalAlignment="Top" Click="btn_Send_Click" Grid.ColumnSpan="2" RenderTransformOrigin="0.912,2.206"/>
     </Grid>
 </Window>
