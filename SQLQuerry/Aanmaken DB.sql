@@ -1,6 +1,9 @@
+USE master;
+GO
+DROP DATABASE IF EXISTS Television;
+GO
 CREATE DATABASE Television
 GO
-
 USE Television
 
 CREATE TABLE TvCurrent(
