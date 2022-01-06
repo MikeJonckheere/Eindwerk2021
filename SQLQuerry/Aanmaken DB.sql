@@ -18,5 +18,9 @@ CREATE TABLE TvSettings(
 SettingsId INT PRIMARY KEY IDENTITY,
 SettingsChannel INT NOT NULL,
 SettingsVolume INT NOT NULL,
+SettingsSource INT NOT NULL,
 DateCreated DATETIME NOT NULL DEFAULT(GETDATE())
 )
+
+INSERT INTO TvSettings(SettingsChannel, SettingsVolume, SettingsSource)
+VALUES (1, 20, 1)
