@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Television.Models;
+using Television.Repositories;
 
 namespace Television
 {
@@ -25,7 +27,6 @@ namespace Television
         {
             InitializeComponent();
             var worker = Worker.Instance;
-            
         }
     }
 }

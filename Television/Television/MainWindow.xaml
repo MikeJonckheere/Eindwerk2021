@@ -7,6 +7,9 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <TextBlock x:Name ="txtCurrentChannel" HorizontalAlignment="Left" Margin="84,91,0,0" Text="Current Channel: " TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock x:Name ="txtCurrentVolume" HorizontalAlignment="Left" Margin="84,127,0,0" Text="Current Volume: " TextWrapping="Wrap" VerticalAlignment="Top"/>
+
 
     </Grid>
 </Window>

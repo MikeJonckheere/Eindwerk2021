@@ -1,22 +1,51 @@
-C:\Users\mikej\Documents\CSHARP\EINDWERK2021VastePC\Television\Television\bin\Debug\net5.0-windows\Television.exe
-C:\Users\mikej\Documents\CSHARP\EINDWERK2021VastePC\Television\Television\bin\Debug\net5.0-windows\Television.deps.json
-C:\Users\mikej\Documents\CSHARP\EINDWERK2021VastePC\Television\Television\bin\Debug\net5.0-windows\Television.runtimeconfig.json
-C:\Users\mikej\Documents\CSHARP\EINDWERK2021VastePC\Television\Television\bin\Debug\net5.0-windows\Television.runtimeconfig.dev.json
-C:\Users\mikej\Documents\CSHARP\EINDWERK2021VastePC\Television\Television\bin\Debug\net5.0-windows\Television.dll
-C:\Users\mikej\Documents\CSHARP\EINDWERK2021VastePC\Television\Television\bin\Debug\net5.0-windows\ref\Television.dll
-C:\Users\mikej\Documents\CSHARP\EINDWERK2021VastePC\Television\Television\bin\Debug\net5.0-windows\Television.pdb
-C:\Users\mikej\Documents\CSHARP\EINDWERK2021VastePC\Television\Television\obj\Debug\net5.0-windows\Television.csproj.AssemblyReference.cache
-C:\Users\mikej\Documents\CSHARP\EINDWERK2021VastePC\Television\Television\obj\Debug\net5.0-windows\MainWindow.g.cs
-C:\Users\mikej\Documents\CSHARP\EINDWERK2021VastePC\Television\Television\obj\Debug\net5.0-windows\App.g.cs
-C:\Users\mikej\Documents\CSHARP\EINDWERK2021VastePC\Television\Television\obj\Debug\net5.0-windows\Television_MarkupCompile.cache
-C:\Users\mikej\Documents\CSHARP\EINDWERK2021VastePC\Television\Television\obj\Debug\net5.0-windows\Television_MarkupCompile.lref
-C:\Users\mikej\Documents\CSHARP\EINDWERK2021VastePC\Television\Television\obj\Debug\net5.0-windows\MainWindow.baml
-C:\Users\mikej\Documents\CSHARP\EINDWERK2021VastePC\Television\Television\obj\Debug\net5.0-windows\Television.g.resources
-C:\Users\mikej\Documents\CSHARP\EINDWERK2021VastePC\Television\Television\obj\Debug\net5.0-windows\Television.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\mikej\Documents\CSHARP\EINDWERK2021VastePC\Television\Television\obj\Debug\net5.0-windows\Television.AssemblyInfoInputs.cache
-C:\Users\mikej\Documents\CSHARP\EINDWERK2021VastePC\Television\Television\obj\Debug\net5.0-windows\Television.AssemblyInfo.cs
-C:\Users\mikej\Documents\CSHARP\EINDWERK2021VastePC\Television\Television\obj\Debug\net5.0-windows\Television.csproj.CoreCompileInputs.cache
-C:\Users\mikej\Documents\CSHARP\EINDWERK2021VastePC\Television\Television\obj\Debug\net5.0-windows\Television.dll
-C:\Users\mikej\Documents\CSHARP\EINDWERK2021VastePC\Television\Television\obj\Debug\net5.0-windows\ref\Television.dll
-C:\Users\mikej\Documents\CSHARP\EINDWERK2021VastePC\Television\Television\obj\Debug\net5.0-windows\Television.pdb
-C:\Users\mikej\Documents\CSHARP\EINDWERK2021VastePC\Television\Television\obj\Debug\net5.0-windows\Television.genruntimeconfig.cache
+C:\Users\fliefhooghe\Downloads\Television\Television\bin\Debug\net5.0-windows\Television.exe
+C:\Users\fliefhooghe\Downloads\Television\Television\bin\Debug\net5.0-windows\Television.deps.json
+C:\Users\fliefhooghe\Downloads\Television\Television\bin\Debug\net5.0-windows\Television.runtimeconfig.json
+C:\Users\fliefhooghe\Downloads\Television\Television\bin\Debug\net5.0-windows\Television.runtimeconfig.dev.json
+C:\Users\fliefhooghe\Downloads\Television\Television\bin\Debug\net5.0-windows\Television.dll
+C:\Users\fliefhooghe\Downloads\Television\Television\bin\Debug\net5.0-windows\ref\Television.dll
+C:\Users\fliefhooghe\Downloads\Television\Television\bin\Debug\net5.0-windows\Television.pdb
+C:\Users\fliefhooghe\Downloads\Television\Television\obj\Debug\net5.0-windows\Television.csproj.AssemblyReference.cache
+C:\Users\fliefhooghe\Downloads\Television\Television\obj\Debug\net5.0-windows\MainWindow.g.cs
+C:\Users\fliefhooghe\Downloads\Television\Television\obj\Debug\net5.0-windows\App.g.cs
+C:\Users\fliefhooghe\Downloads\Television\Television\obj\Debug\net5.0-windows\Television_MarkupCompile.cache
+C:\Users\fliefhooghe\Downloads\Television\Television\obj\Debug\net5.0-windows\Television_MarkupCompile.lref
+C:\Users\fliefhooghe\Downloads\Television\Television\obj\Debug\net5.0-windows\MainWindow.baml
+C:\Users\fliefhooghe\Downloads\Television\Television\obj\Debug\net5.0-windows\Television.g.resources
+C:\Users\fliefhooghe\Downloads\Television\Television\obj\Debug\net5.0-windows\Television.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\fliefhooghe\Downloads\Television\Television\obj\Debug\net5.0-windows\Television.AssemblyInfoInputs.cache
+C:\Users\fliefhooghe\Downloads\Television\Television\obj\Debug\net5.0-windows\Television.AssemblyInfo.cs
+C:\Users\fliefhooghe\Downloads\Television\Television\obj\Debug\net5.0-windows\Television.csproj.CoreCompileInputs.cache
+C:\Users\fliefhooghe\Downloads\Television\Television\obj\Debug\net5.0-windows\Television.dll
+C:\Users\fliefhooghe\Downloads\Television\Television\obj\Debug\net5.0-windows\ref\Television.dll
+C:\Users\fliefhooghe\Downloads\Television\Television\obj\Debug\net5.0-windows\Television.pdb
+C:\Users\fliefhooghe\Downloads\Television\Television\obj\Debug\net5.0-windows\Television.genruntimeconfig.cache
+C:\Users\fliefhooghe\Google Drive\Syntrawest\net deel\eindwerk2021\Television\Television\bin\Debug\net5.0-windows\Television.exe
+C:\Users\fliefhooghe\Google Drive\Syntrawest\net deel\eindwerk2021\Television\Television\bin\Debug\net5.0-windows\Television.deps.json
+C:\Users\fliefhooghe\Google Drive\Syntrawest\net deel\eindwerk2021\Television\Television\bin\Debug\net5.0-windows\Television.runtimeconfig.json
+C:\Users\fliefhooghe\Google Drive\Syntrawest\net deel\eindwerk2021\Television\Television\bin\Debug\net5.0-windows\Television.runtimeconfig.dev.json
+C:\Users\fliefhooghe\Google Drive\Syntrawest\net deel\eindwerk2021\Television\Television\bin\Debug\net5.0-windows\Television.dll
+C:\Users\fliefhooghe\Google Drive\Syntrawest\net deel\eindwerk2021\Television\Television\bin\Debug\net5.0-windows\ref\Television.dll
+C:\Users\fliefhooghe\Google Drive\Syntrawest\net deel\eindwerk2021\Television\Television\bin\Debug\net5.0-windows\Television.pdb
+C:\Users\fliefhooghe\Google Drive\Syntrawest\net deel\eindwerk2021\Television\Television\bin\Debug\net5.0-windows\System.Data.SqlClient.dll
+C:\Users\fliefhooghe\Google Drive\Syntrawest\net deel\eindwerk2021\Television\Television\bin\Debug\net5.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\fliefhooghe\Google Drive\Syntrawest\net deel\eindwerk2021\Television\Television\bin\Debug\net5.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\fliefhooghe\Google Drive\Syntrawest\net deel\eindwerk2021\Television\Television\bin\Debug\net5.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\fliefhooghe\Google Drive\Syntrawest\net deel\eindwerk2021\Television\Television\bin\Debug\net5.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\fliefhooghe\Google Drive\Syntrawest\net deel\eindwerk2021\Television\Television\bin\Debug\net5.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\fliefhooghe\Google Drive\Syntrawest\net deel\eindwerk2021\Television\Television\obj\Debug\net5.0-windows\Television.csproj.AssemblyReference.cache
+C:\Users\fliefhooghe\Google Drive\Syntrawest\net deel\eindwerk2021\Television\Television\obj\Debug\net5.0-windows\MainWindow.g.cs
+C:\Users\fliefhooghe\Google Drive\Syntrawest\net deel\eindwerk2021\Television\Television\obj\Debug\net5.0-windows\App.g.cs
+C:\Users\fliefhooghe\Google Drive\Syntrawest\net deel\eindwerk2021\Television\Television\obj\Debug\net5.0-windows\Television_MarkupCompile.cache
+C:\Users\fliefhooghe\Google Drive\Syntrawest\net deel\eindwerk2021\Television\Television\obj\Debug\net5.0-windows\Television_MarkupCompile.lref
+C:\Users\fliefhooghe\Google Drive\Syntrawest\net deel\eindwerk2021\Television\Television\obj\Debug\net5.0-windows\MainWindow.baml
+C:\Users\fliefhooghe\Google Drive\Syntrawest\net deel\eindwerk2021\Television\Television\obj\Debug\net5.0-windows\Television.g.resources
+C:\Users\fliefhooghe\Google Drive\Syntrawest\net deel\eindwerk2021\Television\Television\obj\Debug\net5.0-windows\Television.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\fliefhooghe\Google Drive\Syntrawest\net deel\eindwerk2021\Television\Television\obj\Debug\net5.0-windows\Television.AssemblyInfoInputs.cache
+C:\Users\fliefhooghe\Google Drive\Syntrawest\net deel\eindwerk2021\Television\Television\obj\Debug\net5.0-windows\Television.AssemblyInfo.cs
+C:\Users\fliefhooghe\Google Drive\Syntrawest\net deel\eindwerk2021\Television\Television\obj\Debug\net5.0-windows\Television.csproj.CoreCompileInputs.cache
+C:\Users\fliefhooghe\Google Drive\Syntrawest\net deel\eindwerk2021\Television\Television\obj\Debug\net5.0-windows\Television.csproj.CopyComplete
+C:\Users\fliefhooghe\Google Drive\Syntrawest\net deel\eindwerk2021\Television\Television\obj\Debug\net5.0-windows\Television.dll
+C:\Users\fliefhooghe\Google Drive\Syntrawest\net deel\eindwerk2021\Television\Television\obj\Debug\net5.0-windows\ref\Television.dll
+C:\Users\fliefhooghe\Google Drive\Syntrawest\net deel\eindwerk2021\Television\Television\obj\Debug\net5.0-windows\Television.pdb
+C:\Users\fliefhooghe\Google Drive\Syntrawest\net deel\eindwerk2021\Television\Television\obj\Debug\net5.0-windows\Television.genruntimeconfig.cache
