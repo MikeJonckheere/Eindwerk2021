@@ -15,6 +15,7 @@ namespace Television
         public static Worker Instance { get { return lazy.Value; } }
         public bool TvIsOn { get; set; }
         BackgroundWorker worker = new BackgroundWorker();
+        static sqlRepository repo = new sqlRepository();
 
         private Worker()
         {
@@ -28,20 +29,14 @@ namespace Television
         {
             worker.RunWorkerAsync();
         }
-        static sqlRepository repo = new sqlRepository();
 
         private void Worker_DoWork(object sender, DoWorkEventArgs e)
         {
-
             while (TvIsOn)
             {
                 //var tvs = repo.GetCurrentValues();
-                //foreach (var tv in tvs)
-                //{
-                //    txtCurrentChannel.Text = "Current Channel: " + tv.SettingsChannel.ToString();
-                //    txtCurrentVolume.Text = "Current Volume: " + tv.SettingsVolume.ToString();
-                //}
-
+                //((MainWindow)System.Windows.Application.Current.MainWindow).txtCurrentChannel.Text.ToUpper();
+                //myMainWindow.txtCurrentVolume.Text = "Current Volume: " + tv.SettingsVolume.ToString();
             }
         }
     }
