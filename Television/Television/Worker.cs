@@ -29,8 +29,12 @@ namespace Television
         {
             worker.RunWorkerAsync();
         }
-
-        private void Worker_DoWork(object sender, DoWorkEventArgs e)
+        public void StopWorking()
+        {
+            worker.WorkerSupportsCancellation = true;
+            worker.CancelAsync();
+        }
+    private void Worker_DoWork(object sender, DoWorkEventArgs e)
         {
             while (TvIsOn)
             {

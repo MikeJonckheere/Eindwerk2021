@@ -5,21 +5,25 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Television"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800" Closed="Window_Closed">
     <Grid>
-        <Button x:Name="btn_OnOff" Content="On/Off" HorizontalAlignment="Right" Margin="0,50,100,0" VerticalAlignment="Top" Height="40" Width="70" FontFamily="Arial" Click="btn_OnOff_Click"/>
-        <Button x:Name="btn_Source" Content="Source" HorizontalAlignment="Right" Margin="0,300,100,0" VerticalAlignment="Top" Height="40" Width="70" FontFamily="Arial"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="87*"/>
+            <ColumnDefinition Width="313*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="btn_OnOff" Content="On/Off" HorizontalAlignment="Right" Margin="0,50,100,0" VerticalAlignment="Top" Height="40" Width="70" FontFamily="Arial" Click="btn_OnOff_Click" Grid.Column="1"/>
+        <Button x:Name="btn_Source" Content="Source" HorizontalAlignment="Right" Margin="0,300,100,0" VerticalAlignment="Top" Height="40" Width="70" FontFamily="Arial" Grid.Column="1"/>
 
-        <Button x:Name="btn_ChannelUp" Content="+" HorizontalAlignment="Right" Margin="0,150,170,0" VerticalAlignment="Top" Height="20" Width="20" FontFamily="Arial"/>
-        <TextBlock x:Name ="txt_Channel" HorizontalAlignment="Right" Margin="0,200,160,0" Text="Channel" TextWrapping="Wrap" VerticalAlignment="Top"/>
-        <Button x:Name="btn_ChannelDown" Content="-" HorizontalAlignment="Right" Margin="0,250,170,0" VerticalAlignment="Top" Height="20" Width="20" FontFamily="Arial"/>
+        <Button x:Name="btn_ChannelUp" Content="+" HorizontalAlignment="Right" Margin="0,150,170,0" VerticalAlignment="Top" Height="20" Width="20" FontFamily="Arial" Grid.Column="1"/>
+        <TextBlock x:Name ="txt_Channel" HorizontalAlignment="Right" Margin="0,200,160,0" Text="Channel" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="1"/>
+        <Button x:Name="btn_ChannelDown" Content="-" HorizontalAlignment="Right" Margin="0,250,170,0" VerticalAlignment="Top" Height="20" Width="20" FontFamily="Arial" Grid.Column="1"/>
 
-        <Button x:Name="btn_VolumeUp" Content="+" HorizontalAlignment="Right" Margin="0,150,70,0" VerticalAlignment="Top" Height="20" Width="20" FontFamily="Arial"/>
-        <TextBlock x:Name ="txt_Volume" HorizontalAlignment="Right" Margin="0,200,60,0" Text="Volume" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <Button x:Name="btn_VolumeUp" Content="+" HorizontalAlignment="Right" Margin="0,150,70,0" VerticalAlignment="Top" Height="20" Width="20" FontFamily="Arial" Grid.Column="1"/>
+        <TextBlock x:Name ="txt_Volume" HorizontalAlignment="Right" Margin="0,200,60,0" Text="Volume" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="1"/>
 
-        <Button x:Name="btn_VolumeDown" Content="-" HorizontalAlignment="Right" Margin="0,250,70,0" VerticalAlignment="Top" Height="20" Width="20" FontFamily="Arial"/>
+        <Button x:Name="btn_VolumeDown" Content="-" HorizontalAlignment="Right" Margin="0,250,70,0" VerticalAlignment="Top" Height="20" Width="20" FontFamily="Arial" Grid.Column="1"/>
 
-        <TextBlock x:Name ="txt_CurrentChannel" x:FieldModifier="public" HorizontalAlignment="Left" Margin="84,91,0,0" Text="Current Channel: " TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock x:Name ="txt_CurrentChannel" x:FieldModifier="public" HorizontalAlignment="Left" Margin="84,91,0,0" Text="Current Channel: " TextWrapping="Wrap" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
         <TextBlock x:Name ="txt_CurrentVolume" x:FieldModifier="public" HorizontalAlignment="Left" Margin="84,127,0,0" Text="Current Volume: " TextWrapping="Wrap" VerticalAlignment="Top"/>
 
 
