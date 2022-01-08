@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Button x:Name="btn_OnOff" Content="On/Off" HorizontalAlignment="Right" Margin="0,50,100,0" VerticalAlignment="Top" Height="40" Width="70" FontFamily="Arial"/>
+        <Button x:Name="btn_OnOff" Content="On/Off" HorizontalAlignment="Right" Margin="0,50,100,0" VerticalAlignment="Top" Height="40" Width="70" FontFamily="Arial" Click="btn_OnOff_Click"/>
         <Button x:Name="btn_Source" Content="Source" HorizontalAlignment="Right" Margin="0,300,100,0" VerticalAlignment="Top" Height="40" Width="70" FontFamily="Arial"/>
 
         <Button x:Name="btn_ChannelUp" Content="+" HorizontalAlignment="Right" Margin="0,150,170,0" VerticalAlignment="Top" Height="20" Width="20" FontFamily="Arial"/>

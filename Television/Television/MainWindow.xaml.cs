@@ -27,13 +27,28 @@ namespace Television
 
         public MainWindow()
         {
-
             InitializeComponent();
             var worker = Worker.Instance;
-            worker.TvIsOn = true;
-            worker.StartWorking();
-
         }
 
+        public void btn_OnOff_Click(object sender, RoutedEventArgs e)
+        {
+
+            //stopzetten van Startworking en scherm op default waarden plaatsen
+            if (Worker.Instance.TvIsOn)
+            {
+                Worker.Instance.TvIsOn = false;
+                
+                //stopzetten RunWorkerAsync
+                //txt_CurrentChannel.Text = "Current Channel: test off button";
+                //txt_CurrentVolume.Text = "Current Volume: test off button";
+
+            }
+            else
+            {
+                Worker.Instance.TvIsOn = true;
+                Worker.Instance.StartWorking();
+            }
+        }
     }
 }

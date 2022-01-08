@@ -17,7 +17,6 @@ namespace Television
         public bool TvIsOn { get; set; }
         BackgroundWorker worker = new BackgroundWorker();
         static sqlRepository repo = new sqlRepository();
-
         private Worker()
         {
             worker.DoWork += Worker_DoWork;
@@ -39,6 +38,7 @@ namespace Television
                 ///Simple code to use Dispatcher
                 ///if you receive error an object reference is required for the non-static field, method.
                 ///
+
                 Application.Current.Dispatcher.Invoke(() =>
                 {
                     var tvs = repo.GetCurrentValues();
