@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
+using System.Windows;
 using Television.Repositories;
+
 
 
 namespace Television
@@ -34,9 +35,19 @@ namespace Television
         {
             while (TvIsOn)
             {
-                //var tvs = repo.GetCurrentValues();
-                //((MainWindow)System.Windows.Application.Current.MainWindow).txtCurrentChannel.Text.ToUpper();
-                //myMainWindow.txtCurrentVolume.Text = "Current Volume: " + tv.SettingsVolume.ToString();
+                ///A ui elememt can only be accessed by one UI Thread. CheckBox Requires UI Thread and your timer runs on different thread. 
+                ///Simple code to use Dispatcher
+                ///if you receive error an object reference is required for the non-static field, method.
+                ///
+                Application.Current.Dispatcher.Invoke(() =>
+                {
+                    var tvs = repo.GetCurrentValues();
+                    foreach (var tv in tvs)
+                    {
+                        ((MainWindow)System.Windows.Application.Current.MainWindow).txt_CurrentChannel.Text = "Current Channel: " + tv.SettingsChannel.ToString();
+                        ((MainWindow)System.Windows.Application.Current.MainWindow).txt_CurrentVolume.Text = "Current Volume: " + tv.SettingsVolume.ToString();
+                    }
+                });
             }
         }
     }

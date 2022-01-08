@@ -24,17 +24,15 @@ namespace Television
 
     public partial class MainWindow : Window
     {
-        static string textBoxString;
 
         public MainWindow()
         {
+
             InitializeComponent();
             var worker = Worker.Instance;
             worker.TvIsOn = true;
-        }
-        public static string TextboxText
-        {
-            set { textBoxString = value; }
+            worker.StartWorking();
+
         }
 
     }
