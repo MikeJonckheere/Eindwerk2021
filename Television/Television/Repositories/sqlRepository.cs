@@ -14,8 +14,8 @@ namespace Television.Repositories
     class sqlRepository
     {
         const string _connectionString = "Data Source=localhost; Initial Catalog=Television; User ID=sa; Password=SQL12345";
-        
-        public List<Tele> GetCurrentValues()
+
+        public List<Tele> GetTvSettings()
         {
             var result = new List<Tele>();
 
@@ -37,10 +37,38 @@ namespace Television.Repositories
                 tele.FillTele(settingsChannel, settingsVolume, settingsSource);
 
                 result.Add(tele);
-
             }
             return result;
         }
 
+        public bool GetPowerStatus()
+        {
+            bool result;
+
+            string sql = "SELECT TOP 1 PowerStatus FROM TvPower ORDER BY PowerId DESC";
+
+            using (var connection = new SqlConnection(_connectionString))
+            using (var command = new SqlCommand(sql, connection))
+            {
+                connection.Open();
+                var reader = command.ExecuteReader();
+                reader.Read();
+
+                result = reader.GetBoolean(reader.GetOrdinal("PowerStatus"));
+            }
+            return result;
+        }
+        public void SetPowerStatus(byte powerOnOff)
+        {
+            var sql = "INSERT INTO TvPower(PowerStatus) VALUES(@PowerStatus)";
+
+            using (var connection = new SqlConnection(_connectionString))
+            using (var command = new SqlCommand(sql, connection))
+            {   
+                command.Parameters.AddWithValue("@PowerStatus", powerOnOff);
+                connection.Open();
+                command.ExecuteNonQuery();
+            }
+        }
     }
 }

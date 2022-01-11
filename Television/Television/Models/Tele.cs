@@ -18,6 +18,5 @@ namespace Television.Models
             this.SettingsVolume = settingsVolume;
             this.SettingsSource = settingsSource;
         }
-
     }
 }

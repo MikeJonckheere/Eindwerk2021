@@ -35,21 +35,25 @@ namespace Television
 
         public void btn_OnOff_Click(object sender, RoutedEventArgs e)
         {
-
-            //stopzetten van Startworking en scherm op default waarden plaatsen
-            if (!Worker.Instance.TvIsOn)
+            sqlRepository telePower = new sqlRepository();
+            bool status = telePower.GetPowerStatus();
+            if (!status)
             {
                 Worker.Instance.TvIsOn = true;
                 Worker.Instance.StartWorking();
+                telePower.SetPowerStatus((byte)1);
             }
             else
             {
+                //stopzetten van Startworking en scherm op default waarden plaatsen
                 Worker.Instance.TvIsOn = false;
                 Worker.Instance.StopWorking();
+                telePower.SetPowerStatus((byte)0);
 
                 Application.Current.Dispatcher.BeginInvoke(
                   DispatcherPriority.Background,
-                  new Action(() => {
+                  new Action(() =>
+                  {
                       txt_CurrentChannel.Text = "Current Channel: ";
                       txt_CurrentVolume.Text = "Current Volume: ";
                   }));

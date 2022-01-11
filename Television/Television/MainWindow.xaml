@@ -23,8 +23,8 @@
 
         <Button x:Name="btn_VolumeDown" Content="-" HorizontalAlignment="Right" Margin="0,250,70,0" VerticalAlignment="Top" Height="20" Width="20" FontFamily="Arial" Grid.Column="1"/>
 
-        <TextBlock x:Name ="txt_CurrentChannel" x:FieldModifier="public" HorizontalAlignment="Left" Margin="84,91,0,0" Text="Current Channel: " TextWrapping="Wrap" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
-        <TextBlock x:Name ="txt_CurrentVolume" x:FieldModifier="public" HorizontalAlignment="Left" Margin="84,127,0,0" Text="Current Volume: " TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock x:Name ="txt_CurrentChannel" x:FieldModifier="public" HorizontalAlignment="Left" Margin="84,91,0,0" Text="Current Channel: " TextWrapping="Wrap" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="150"/>
+        <TextBlock x:Name ="txt_CurrentVolume" x:FieldModifier="public" HorizontalAlignment="Left" Margin="84,127,0,0" Text="Current Volume: " TextWrapping="Wrap" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="150"/>
 
 
     </Grid>

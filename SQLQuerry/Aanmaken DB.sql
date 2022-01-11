@@ -22,5 +22,14 @@ SettingsSource INT NOT NULL,
 DateCreated DATETIME NOT NULL DEFAULT(GETDATE())
 )
 
+CREATE TABLE TvPower(
+PowerId INT PRIMARY KEY IDENTITY,
+PowerStatus BIT NOT NULL
+)
+
+
 INSERT INTO TvSettings(SettingsChannel, SettingsVolume, SettingsSource)
 VALUES (1, 20, 1)
+
+INSERT INTO TvPower(PowerStatus)
+VALUES(0)

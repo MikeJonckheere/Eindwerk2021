@@ -27,7 +27,10 @@ namespace Television
         /// </summary>
         public void StartWorking()
         {
-            worker.RunWorkerAsync();
+            if (!worker.IsBusy)
+                worker.RunWorkerAsync();
+            else
+                MessageBox.Show("Can't run the worker twice!");
         }
         public void StopWorking()
         {
@@ -36,6 +39,7 @@ namespace Television
         }
     private void Worker_DoWork(object sender, DoWorkEventArgs e)
         {
+            
             while (TvIsOn)
             {
                 ///A ui elememt can only be accessed by one UI Thread. CheckBox Requires UI Thread and your timer runs on different thread. 
@@ -45,7 +49,7 @@ namespace Television
 
                 Application.Current.Dispatcher.Invoke(() =>
                 {
-                    var tvs = repo.GetCurrentValues();
+                    var tvs = repo.GetTvSettings();
                     foreach (var tv in tvs)
                     {
                         ((MainWindow)System.Windows.Application.Current.MainWindow).txt_CurrentChannel.Text = "Current Channel: " + tv.SettingsChannel.ToString();
