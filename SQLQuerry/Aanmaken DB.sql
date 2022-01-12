@@ -28,8 +28,3 @@ PowerStatus BIT NOT NULL
 )
 
 
-INSERT INTO TvSettings(SettingsChannel, SettingsVolume, SettingsSource)
-VALUES (1, 20, 1)
-
-INSERT INTO TvPower(PowerStatus)
-VALUES(0)

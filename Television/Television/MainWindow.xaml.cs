@@ -25,30 +25,36 @@ namespace Television
 
     public partial class MainWindow : Window
     {
-
+        static sqlRepository repo = new sqlRepository();
         public MainWindow()
         {
             InitializeComponent();
             var worker = Worker.Instance;
-            
+            repo.SetPowerStatus((byte)0);
         }
 
         public void btn_OnOff_Click(object sender, RoutedEventArgs e)
         {
-            sqlRepository telePower = new sqlRepository();
-            bool status = telePower.GetPowerStatus();
-            if (!status)
+            var tvs = repo.GetTvSettings();
+            Worker.Instance.TvIsOn = repo.GetPowerStatus();
+
+            if (!Worker.Instance.TvIsOn)
             {
+                foreach (var tv in tvs)
+                {
+                    repo.SetCurrentTv(tv.Channel, tv.Volume, tv.Source);
+                }
+
                 Worker.Instance.TvIsOn = true;
                 Worker.Instance.StartWorking();
-                telePower.SetPowerStatus((byte)1);
+                repo.SetPowerStatus((byte)1);
             }
             else
             {
                 //stopzetten van Startworking en scherm op default waarden plaatsen
                 Worker.Instance.TvIsOn = false;
                 Worker.Instance.StopWorking();
-                telePower.SetPowerStatus((byte)0);
+                repo.SetPowerStatus((byte)0);
 
                 Application.Current.Dispatcher.BeginInvoke(
                   DispatcherPriority.Background,
@@ -62,7 +68,27 @@ namespace Television
         //sluiten van window wanneer tv nog aanligt.
         private void Window_Closed(object sender, EventArgs e)
         {
+            Worker.Instance.TvIsOn = false;
+            Worker.Instance.StopWorking();
+            repo.SetPowerStatus((byte)0);
             Application.Current.Dispatcher.InvokeShutdown();
+        }
+
+        private void btn_ChannelUp_Click(object sender, RoutedEventArgs e)
+        {
+            if (Worker.Instance.TvIsOn)
+            {
+                repo.ChannelUp();
+            }
+        }
+
+        private void btn_ChannelDown_Click(object sender, RoutedEventArgs e)
+        {
+            if (Worker.Instance.TvIsOn)
+            {
+                repo.ChannelDown();
+            }
+
         }
     }
 }

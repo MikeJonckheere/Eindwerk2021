@@ -47,15 +47,22 @@ namespace Television
                 ///if you receive error an object reference is required for the non-static field, method.
                 ///
 
-                Application.Current.Dispatcher.Invoke(() =>
+                //Try catch om error te voorkomen wanneer de gebruiker de toepassing sluit (via sluitknop) wanneer de tv staat nog aan.
+                try
                 {
-                    var tvs = repo.GetTvSettings();
-                    foreach (var tv in tvs)
+                    Application.Current.Dispatcher.Invoke(() =>
                     {
-                        ((MainWindow)System.Windows.Application.Current.MainWindow).txt_CurrentChannel.Text = "Current Channel: " + tv.SettingsChannel.ToString();
-                        ((MainWindow)System.Windows.Application.Current.MainWindow).txt_CurrentVolume.Text = "Current Volume: " + tv.SettingsVolume.ToString();
-                    }
-                });
+                        var tvs = repo.GetCurrentTv();
+                        foreach (var tv in tvs)
+                        {
+                            ((MainWindow)System.Windows.Application.Current.MainWindow).txt_CurrentChannel.Text = "Current Channel: " + tv.Channel.ToString();
+                            ((MainWindow)System.Windows.Application.Current.MainWindow).txt_CurrentVolume.Text = "Current Volume: " + tv.Volume.ToString();
+                        }
+                    });
+                }
+                catch (OperationCanceledException)
+                {
+                }
             }
         }
     }
