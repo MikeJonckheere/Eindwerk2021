@@ -173,11 +173,62 @@ namespace Television.Repositories
                 }
                 connection.Open();
                 command.ExecuteNonQuery();
+            }
+        }
+        public void VolumeUp()
+        {
+            var sql = "INSERT INTO TvCurrent(Channel, Volume, Source) VALUES (@Channel, @Volume, @Source)";
+            using (var connection = new SqlConnection(_connectionString))
+            using (var command = new SqlCommand(sql, connection))
+            {
+                var results = GetCurrentTv();
+                foreach (var result in results)
+                {
+                    if (result.Volume == 100)
+                    {
+                        result.Volume = 100;
+                    }
+                    else
+                    {
+                        result.Volume++;
+                    }
+                    command.Parameters.AddWithValue("@Channel", result.Channel);
+                    command.Parameters.AddWithValue("@Volume", result.Volume);
+                    command.Parameters.AddWithValue("@Source", result.Source);
+                }
+                connection.Open();
+                command.ExecuteNonQuery();
 
+            }
+        }
+        public void VolumeDown()
+        {
+            var sql = "INSERT INTO TvCurrent(Channel, Volume, Source) VALUES (@Channel, @Volume, @Source)";
+            using (var connection = new SqlConnection(_connectionString))
+            using (var command = new SqlCommand(sql, connection))
+            {
+                var results = GetCurrentTv();
+                foreach (var result in results)
+                {
+                    if (result.Volume == 0)
+                    {
+                        result.Volume = 0;
+                    }
+                    else
+                    {
+                        result.Volume--;
+                    }
+                    command.Parameters.AddWithValue("@Channel", result.Channel);
+                    command.Parameters.AddWithValue("@Volume", result.Volume);
+                    command.Parameters.AddWithValue("@Source", result.Source);
+                }
+                connection.Open();
+                command.ExecuteNonQuery();
+
+            }
         }
 
 
-        }
 
     }
 }

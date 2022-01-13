@@ -90,5 +90,22 @@ namespace Television
             }
 
         }
+
+        private void btn_VolumeUp_Click(object sender, RoutedEventArgs e)
+        {
+            if (Worker.Instance.TvIsOn)
+            {
+                repo.VolumeUp();
+            }
+        }
+
+        private void btn_VolumeDown_Click(object sender, RoutedEventArgs e)
+        {
+            if (Worker.Instance.TvIsOn)
+            {
+                repo.VolumeDown();
+            }
+
+        }
     }
 }
