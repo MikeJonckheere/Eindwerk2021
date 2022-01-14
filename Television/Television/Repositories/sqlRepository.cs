@@ -227,6 +227,42 @@ namespace Television.Repositories
 
             }
         }
+        public void SetSource()
+        {
+            var sql = "INSERT INTO TvCurrent(Channel, Volume, Source) VALUES (@Channel, @Volume, @Source)";
+            using (var connection = new SqlConnection(_connectionString))
+            using (var command = new SqlCommand(sql, connection))
+            {
+                var results = GetCurrentTv();
+                foreach (var result in results)
+                {
+                    if (result.Source==1)
+                    {
+                        result.Source++;
+                        result.Channel = 0;
+                    }
+                    else if (result.Source==2)
+                    {
+                        result.Source++;
+                        result.Channel = 0;
+                    }
+                    else
+                    {
+                        //bij switchen van source naar tv de standaard tv settings inladen
+
+                    }
+
+                    command.Parameters.AddWithValue("@Channel", result.Channel);
+                    command.Parameters.AddWithValue("@Volume", result.Volume);
+                    command.Parameters.AddWithValue("@Source", result.Source);
+                }
+                connection.Open();
+                command.ExecuteNonQuery();
+
+            }
+
+
+        }
 
 
 

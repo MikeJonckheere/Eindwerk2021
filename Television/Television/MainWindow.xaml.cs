@@ -1,19 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 using System.Windows.Threading;
-using Television.Models;
 using Television.Repositories;
 
 namespace Television
@@ -60,6 +47,7 @@ namespace Television
                   DispatcherPriority.Background,
                   new Action(() =>
                   {
+                      txt_CurrentSource.Text = "Current Source: ";
                       txt_CurrentChannel.Text = "Current Channel: ";
                       txt_CurrentVolume.Text = "Current Volume: ";
                   }));
@@ -76,6 +64,8 @@ namespace Television
 
         private void btn_ChannelUp_Click(object sender, RoutedEventArgs e)
         {
+            //aanvullen bij source 2 (hdmi1) en 3 (hdmi2) niet mogelijk om kanalen te wijzigen
+
             if (Worker.Instance.TvIsOn)
             {
                 repo.ChannelUp();
@@ -84,6 +74,7 @@ namespace Television
 
         private void btn_ChannelDown_Click(object sender, RoutedEventArgs e)
         {
+            //aanvullen bij source 2 (hdmi1) en 3 (hdmi2) niet mogelijk om kanalen te wijzigen
             if (Worker.Instance.TvIsOn)
             {
                 repo.ChannelDown();
@@ -107,5 +98,13 @@ namespace Television
             }
 
         }
-    }
+
+        private void btn_Source_Click(object sender, RoutedEventArgs e)
+        {
+            if (Worker.Instance.TvIsOn)
+            {
+                repo.SetSource();
+            }
+            }
+        }
 }
