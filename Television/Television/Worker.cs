@@ -52,7 +52,6 @@ namespace Television
                 {
                     Application.Current.Dispatcher.Invoke(() =>
                     {
-                        MainWindow.OnOff();
                         var tvs = repo.GetCurrentTv();
                         foreach (var tv in tvs)
                         {
