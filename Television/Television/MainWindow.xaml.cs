@@ -17,10 +17,10 @@ namespace Television
         {
             InitializeComponent();
             var worker = Worker.Instance;
+            Worker.Instance.StartWorking();
             repo.SetPowerStatus((byte)0);
         }
-
-        public void btn_OnOff_Click(object sender, RoutedEventArgs e)
+        public static void OnOff()
         {
             var tvs = repo.GetTvSettings();
             Worker.Instance.TvIsOn = repo.GetPowerStatus();
@@ -33,25 +33,29 @@ namespace Television
                 }
 
                 Worker.Instance.TvIsOn = true;
-                Worker.Instance.StartWorking();
                 repo.SetPowerStatus((byte)1);
             }
-            else
-            {
-                //stopzetten van Startworking en scherm op default waarden plaatsen
-                Worker.Instance.TvIsOn = false;
-                Worker.Instance.StopWorking();
-                repo.SetPowerStatus((byte)0);
+            //else
+            //{
+            //    //stopzetten van Startworking en scherm op default waarden plaatsen
+            //    Worker.Instance.TvIsOn = false;
+            //    Worker.Instance.StopWorking();
+            //    repo.SetPowerStatus((byte)0);
 
-                Application.Current.Dispatcher.BeginInvoke(
-                  DispatcherPriority.Background,
-                  new Action(() =>
-                  {
-                      txt_CurrentSource.Text = "Current Source: ";
-                      txt_CurrentChannel.Text = "Current Channel: ";
-                      txt_CurrentVolume.Text = "Current Volume: ";
-                  }));
-            }
+            //    Application.Current.Dispatcher.BeginInvoke(
+            //      DispatcherPriority.Background,
+            //      new Action(() =>
+            //      {
+            //          ((MainWindow)System.Windows.Application.Current.MainWindow).txt_CurrentSource.Text = "Current Source: ";
+            //          ((MainWindow)System.Windows.Application.Current.MainWindow).txt_CurrentChannel.Text = "Current Channel: ";
+            //          ((MainWindow)System.Windows.Application.Current.MainWindow).txt_CurrentVolume.Text = "Current Volume: ";
+            //      }));
+            //}
+
+        }
+        public void btn_OnOff_Click(object sender, RoutedEventArgs e)
+        {
+            OnOff();
         }
         //sluiten van window wanneer tv nog aanligt.
         private void Window_Closed(object sender, EventArgs e)

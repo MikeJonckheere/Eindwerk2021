@@ -39,9 +39,9 @@ namespace Television
         }
     private void Worker_DoWork(object sender, DoWorkEventArgs e)
         {
-            
             while (TvIsOn)
             {
+
                 ///A ui elememt can only be accessed by one UI Thread. CheckBox Requires UI Thread and your timer runs on different thread. 
                 ///Simple code to use Dispatcher
                 ///if you receive error an object reference is required for the non-static field, method.
@@ -52,6 +52,7 @@ namespace Television
                 {
                     Application.Current.Dispatcher.Invoke(() =>
                     {
+                        MainWindow.OnOff();
                         var tvs = repo.GetCurrentTv();
                         foreach (var tv in tvs)
                         {
