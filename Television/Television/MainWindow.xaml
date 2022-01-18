@@ -8,8 +8,9 @@
         Title="MainWindow" Height="450" Width="800" Closed="Window_Closed">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="87*"/>
-            <ColumnDefinition Width="313*"/>
+            <ColumnDefinition Width="174*"/>
+            <ColumnDefinition Width="626*"/>
+            <ColumnDefinition Width="45*"/>
         </Grid.ColumnDefinitions>
         <Button x:Name="btn_OnOff" Content="On/Off" HorizontalAlignment="Right" Margin="0,50,100,0" VerticalAlignment="Top" Height="40" Width="70" FontFamily="Arial" Click="btn_OnOff_Click" Grid.Column="1"/>
         <Button x:Name="btn_Source" Content="Source" HorizontalAlignment="Right" Margin="0,300,100,0" VerticalAlignment="Top" Height="40" Width="70" FontFamily="Arial" Grid.Column="1" Click="btn_Source_Click"/>

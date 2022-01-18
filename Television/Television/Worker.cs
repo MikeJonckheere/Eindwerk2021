@@ -27,10 +27,7 @@ namespace Television
         /// </summary>
         public void StartWorking()
         {
-            if (!worker.IsBusy)
-                worker.RunWorkerAsync();
-            else
-                MessageBox.Show("Can't run the worker twice!");
+            worker.RunWorkerAsync();
         }
         public void StopWorking()
         {
@@ -41,44 +38,63 @@ namespace Television
         {
             while (TvIsOn)
             {
+                if (repo.GetPowerStatus())
+                {
+                    try
+                    {
+                        Application.Current.Dispatcher.Invoke(() =>
+                        {
+                            var tvs = repo.GetCurrentTv();
+                            foreach (var tv in tvs)
+                            {
+                                switch (tv.Source)
+                                {
+                                    case 1:
+                                        ((MainWindow)System.Windows.Application.Current.MainWindow).txt_CurrentSource.Text = "Current Source: tv";
+                                        break;
+                                    case 2:
+                                        ((MainWindow)System.Windows.Application.Current.MainWindow).txt_CurrentSource.Text = "Current Source: hdmi1";
+                                        break;
+                                    case 3:
+                                        ((MainWindow)System.Windows.Application.Current.MainWindow).txt_CurrentSource.Text = "Current Source: hdmi2";
+                                        break;
 
+                                    default:
+                                        break;
+                                }
+                                ((MainWindow)System.Windows.Application.Current.MainWindow).txt_CurrentChannel.Text = "Current Channel: " + tv.Channel.ToString();
+                                ((MainWindow)System.Windows.Application.Current.MainWindow).txt_CurrentVolume.Text = "Current Volume: " + tv.Volume.ToString();
+                            }
+                        });
+                    }
+                    catch (OperationCanceledException)
+                    {
+                    }
+                }
+                else
+                {
+                    try
+                    {
+                        Application.Current.Dispatcher.Invoke(() =>
+                        {
+                            ((MainWindow)System.Windows.Application.Current.MainWindow).txt_CurrentSource.Text = "Current Source: ";
+                            ((MainWindow)System.Windows.Application.Current.MainWindow).txt_CurrentChannel.Text = "Current Channel: ";
+                            ((MainWindow)System.Windows.Application.Current.MainWindow).txt_CurrentVolume.Text = "Current Volume: ";
+                        });
+
+                    }
+                    catch (OperationCanceledException)
+                    {
+                    }
+
+                }
+
+            }
                 ///A ui elememt can only be accessed by one UI Thread. CheckBox Requires UI Thread and your timer runs on different thread. 
                 ///Simple code to use Dispatcher
                 ///if you receive error an object reference is required for the non-static field, method.
                 ///
-
                 //Try catch om error te voorkomen wanneer de gebruiker de toepassing sluit (via sluitknop) wanneer de tv staat nog aan.
-                try
-                {
-                    Application.Current.Dispatcher.Invoke(() =>
-                    {
-                        var tvs = repo.GetCurrentTv();
-                        foreach (var tv in tvs)
-                        {
-                            switch (tv.Source)
-                            {
-                                case 1:
-                                    ((MainWindow)System.Windows.Application.Current.MainWindow).txt_CurrentSource.Text = "Current Source: tv";
-                                    break;
-                                case 2:
-                                    ((MainWindow)System.Windows.Application.Current.MainWindow).txt_CurrentSource.Text = "Current Source: hdmi1";
-                                    break;
-                                case 3:
-                                    ((MainWindow)System.Windows.Application.Current.MainWindow).txt_CurrentSource.Text = "Current Source: hdmi2";
-                                    break;
-
-                                default:
-                                    break;
-                            }
-                            ((MainWindow)System.Windows.Application.Current.MainWindow).txt_CurrentChannel.Text = "Current Channel: " + tv.Channel.ToString();
-                            ((MainWindow)System.Windows.Application.Current.MainWindow).txt_CurrentVolume.Text = "Current Volume: " + tv.Volume.ToString();
-                        }
-                    });
-                }
-                catch (OperationCanceledException)
-                {
-                }
-            }
         }
     }
 }

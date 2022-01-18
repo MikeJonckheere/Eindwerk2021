@@ -73,6 +73,23 @@ namespace Television.Repositories
             return result;
 
         }
+        public int GetSource()
+        {
+            string sql = "SELECT TOP 1 Id, Source FROM TvCurrent" +
+                         " ORDER BY Id DESC";
+
+            using (var connection = new SqlConnection(_connectionString))
+            using (var command = new SqlCommand(sql, connection))
+            {
+                connection.Open();
+                var reader = command.ExecuteReader();
+                reader.Read();
+
+                var source = reader.GetInt32(reader.GetOrdinal("Source"));
+
+                return source;
+             };
+        }
         public void SetCurrentTv(int channel, int volume, int source)
         {
             var result = new List<Tele>();
@@ -248,8 +265,8 @@ namespace Television.Repositories
                     }
                     else
                     {
-                        //bij switchen van source naar tv de standaard tv settings inladen
-
+                        result.Source = 1;
+                        result.Channel = 1;
                     }
 
                     command.Parameters.AddWithValue("@Channel", result.Channel);

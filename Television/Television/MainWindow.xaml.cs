@@ -16,40 +16,28 @@ namespace Television
         public MainWindow()
         {
             InitializeComponent();
-            var worker = Worker.Instance;
             repo.SetPowerStatus((byte)0);
+            var worker = Worker.Instance;
+            worker.TvIsOn = true;
+            worker.StartWorking();
         }
+
         public void btn_OnOff_Click(object sender, RoutedEventArgs e)
         {
             var tvs = repo.GetTvSettings();
-            Worker.Instance.TvIsOn = repo.GetPowerStatus();
-
-            if (!Worker.Instance.TvIsOn)
+            // update on/off button
+            if (!repo.GetPowerStatus())
             {
                 foreach (var tv in tvs)
                 {
                     repo.SetCurrentTv(tv.Channel, tv.Volume, tv.Source);
                 }
-
-                Worker.Instance.TvIsOn = true;
                 repo.SetPowerStatus((byte)1);
-                Worker.Instance.StartWorking();
             }
             else
             {
                 //stopzetten van Startworking en scherm op default waarden plaatsen
-                Worker.Instance.TvIsOn = false;
-                Worker.Instance.StopWorking();
                 repo.SetPowerStatus((byte)0);
-
-                Application.Current.Dispatcher.BeginInvoke(
-                  DispatcherPriority.Background,
-                  new Action(() =>
-                  {
-                      ((MainWindow)System.Windows.Application.Current.MainWindow).txt_CurrentSource.Text = "Current Source: ";
-                      ((MainWindow)System.Windows.Application.Current.MainWindow).txt_CurrentChannel.Text = "Current Channel: ";
-                      ((MainWindow)System.Windows.Application.Current.MainWindow).txt_CurrentVolume.Text = "Current Volume: ";
-                  }));
             }
         }
         //sluiten van window wanneer tv nog aanligt.
@@ -64,8 +52,7 @@ namespace Television
         private void btn_ChannelUp_Click(object sender, RoutedEventArgs e)
         {
             //aanvullen bij source 2 (hdmi1) en 3 (hdmi2) niet mogelijk om kanalen te wijzigen
-
-            if (Worker.Instance.TvIsOn)
+            if (repo.GetPowerStatus() && repo.GetSource()==1)
             {
                 repo.ChannelUp();
             }
@@ -74,7 +61,7 @@ namespace Television
         private void btn_ChannelDown_Click(object sender, RoutedEventArgs e)
         {
             //aanvullen bij source 2 (hdmi1) en 3 (hdmi2) niet mogelijk om kanalen te wijzigen
-            if (Worker.Instance.TvIsOn)
+            if (repo.GetPowerStatus() && repo.GetSource()==1)
             {
                 repo.ChannelDown();
             }
@@ -83,7 +70,7 @@ namespace Television
 
         private void btn_VolumeUp_Click(object sender, RoutedEventArgs e)
         {
-            if (Worker.Instance.TvIsOn)
+            if (repo.GetPowerStatus())
             {
                 repo.VolumeUp();
             }
@@ -91,7 +78,7 @@ namespace Television
 
         private void btn_VolumeDown_Click(object sender, RoutedEventArgs e)
         {
-            if (Worker.Instance.TvIsOn)
+            if (repo.GetPowerStatus())
             {
                 repo.VolumeDown();
             }
@@ -100,7 +87,7 @@ namespace Television
 
         private void btn_Source_Click(object sender, RoutedEventArgs e)
         {
-            if (Worker.Instance.TvIsOn)
+            if (repo.GetPowerStatus())
             {
                 repo.SetSource();
             }
