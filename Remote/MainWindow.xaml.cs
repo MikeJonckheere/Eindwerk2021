@@ -24,7 +24,8 @@ namespace Remote
         
 
         static bool Onoff = false; // we moeten dit een prop van maken + nog van de sql halen zodat het aangepast wordt bij wijzigen van tv. ook worker mss of iets anders? 
-        static string channel;
+        static string keypad;
+        static int channel;
 
         public MainWindow()
         {
@@ -129,17 +130,21 @@ namespace Remote
         {
             Keypad("9");
         }
+
+        private void btn_Num0_Click(object sender, RoutedEventArgs e)
+        {
+            Keypad("0");
+        }
         public void Keypad(string input) //input van keypad.
         {
-
-
-
-            channel = channel + string.Join("", input);
+            
+            
+            keypad = keypad + string.Join("", input);
+            channel = int.Parse(keypad);
             
             UpdateLoggingBox("Ingevoerde kanaal: "+channel);
-
-
-
         }
+
+
     }
 }

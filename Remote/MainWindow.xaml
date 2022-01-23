@@ -48,7 +48,7 @@
             <Button x:Name="btn_Num2" Style="{DynamicResource RoundCorner}" Content="2" HorizontalAlignment="Center" Margin="10" Height="60" Width="60" IsEnabled="False" FontWeight="Bold" FontSize="18" FontFamily="Arial" Click="btn_Num2_Click"/>
             <Button x:Name="btn_Num5" Style="{DynamicResource RoundCorner}" Content="5" HorizontalAlignment="Center" Margin="10" Height="60" Width="60" IsEnabled="False" FontWeight="Bold" FontSize="18" FontFamily="Arial" Click="btn_Num5_Click"/>
             <Button x:Name="btn_Num8" Style="{DynamicResource RoundCorner}" Content="8" HorizontalAlignment="Center" Margin="10" Height="60" Width="60" IsEnabled="False" FontWeight="Bold" FontSize="18" FontFamily="Arial" Click="btn_Num8_Click"/>
-            <Button x:Name="btn_Num0" Style="{DynamicResource RoundCorner}" Content="0" HorizontalAlignment="Center" Margin="10" Height="60" Width="60" IsEnabled="False" FontWeight="Bold" FontSize="18" FontFamily="Arial"/>
+            <Button x:Name="btn_Num0" Style="{DynamicResource RoundCorner}" Content="0" HorizontalAlignment="Center" Margin="10" Height="60" Width="60" IsEnabled="False" FontWeight="Bold" FontSize="18" FontFamily="Arial" Click="btn_Num0_Click"/>
         </StackPanel>
         <StackPanel Grid.Row="1" Grid.Column="2">
             <Button x:Name="btn_Num3" Style="{DynamicResource RoundCorner}" Content="3" HorizontalAlignment="Center" Margin="10" Height="60" Width="60" IsEnabled="False" FontWeight="Bold" FontSize="18" FontFamily="Arial" Click="btn_Num3_Click"/>
