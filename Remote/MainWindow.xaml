@@ -20,10 +20,10 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="50"/>
 
-            <RowDefinition Height="400"/>
+            <RowDefinition Height="350"/>
 
 
-            <RowDefinition Height="100"/>
+            <RowDefinition Height="170"/>
 
         </Grid.RowDefinitions>
         <Button x:Name="btn_Send" Style="{DynamicResource RoundCorner}" Content="Send" HorizontalAlignment="Center" Width="70" Margin="10" FontFamily="Arial" Click="btn_Send_Click" Grid.Column="1"/>
@@ -41,6 +41,8 @@
                     <Button x:Name="btn_HDMI2" Style="{DynamicResource RoundCorner}" Content="HDMI 2" HorizontalAlignment="Center" Margin="2"  Width="60"/>
                 </StackPanel>
             </Expander>
+           
+
 
 
         </StackPanel>
@@ -61,8 +63,13 @@
             </Expander>
         </StackPanel>
 
-        <ListBox x:Name="lbox_Logging" HorizontalAlignment="Center"  Height="100" Width="280" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" SelectionChanged="lbox_Logging_SelectionChanged"/>
-        <Label x:Name="lb_Logboek" Content="Logboek:" HorizontalAlignment="Left" Margin="10,370,0,0" VerticalAlignment="Top" FontSize="14" FontFamily="Arial" Foreground="Black" Grid.Row="1"/>
+        <ListBox x:Name="lbox_Logging" HorizontalAlignment="Center"  Height="150" Width="280" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" SelectionChanged="lbox_Logging_SelectionChanged">
+            <ListBoxItem>
+                <Label Content="Logboek:" />
+
+
+            </ListBoxItem>
+        </ListBox>
 
 
     </Grid>
