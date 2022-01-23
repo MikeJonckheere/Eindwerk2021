@@ -21,17 +21,30 @@ namespace Remote
     /// </summary>
     public partial class MainWindow : Window
     {
+        
+
         static bool Onoff = false; // we moeten dit een prop van maken + nog van de sql halen zodat het aangepast wordt bij wijzigen van tv. ook worker mss of iets anders? 
 
 
         public MainWindow()
         {
             InitializeComponent();
+            ListBox lbox_Logging = new ListBox();
+            UpdateLoggingBox("Remote opgestart");
+        }
+
+        public void UpdateLoggingBox(string newevent) //stuur een string met de event naar hier.
+        { 
+            DateTime date1 = DateTime.Now;
+            newevent = date1.ToLongTimeString() + "=> " + newevent;
+            lbox_Logging.Items.Add(newevent);
         }
 
         private void btn_Send_Click(object sender, RoutedEventArgs e)
         {
-           //ProgRemote.send();
+            UpdateLoggingBox("Verzenden naar DB");
+
+            //ProgRemote.send();
         }
 
         private void btn_OnoffR_Click(object sender, RoutedEventArgs e)
@@ -67,6 +80,9 @@ namespace Remote
             }
         }
 
+        private void lbox_Logging_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
 
+        }
     }
 }
