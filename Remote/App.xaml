@@ -4,6 +4,17 @@
              xmlns:local="clr-namespace:Remote"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Theme/RoundCornerTheme.xaml"/>
+                
+            </ResourceDictionary.MergedDictionaries>
+
+
+
+        </ResourceDictionary>
+        
+        
     </Application.Resources>
 </Application>
