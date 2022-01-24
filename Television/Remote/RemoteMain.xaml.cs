@@ -56,6 +56,7 @@ namespace Remote
 
             repo.SetCurrentTv(Channel, Volume, Source);
             _volumeSaved = true;
+            Keypad =string.Empty;
         }
 
         private void btn_OnoffR_Click(object sender, RoutedEventArgs e)
