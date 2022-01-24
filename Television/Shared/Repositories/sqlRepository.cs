@@ -6,7 +6,7 @@ namespace Shared.Repositories
 {
     public class SqlRepository
     {
-        const string _connectionString = "Data Source=.; Initial Catalog=Television;Integrated Security=SSPI;";
+        const string _connectionString = "Data Source=localhost; Initial Catalog=Television; User ID=sa; Password=sa";
 
         public Tele GetLastTvSettings()
         {
