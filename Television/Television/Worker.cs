@@ -4,9 +4,7 @@ using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Windows;
-using Television.Repositories;
-
-
+using Shared.Repositories;
 
 namespace Television
 {
@@ -29,7 +27,7 @@ namespace Television
 
         public bool TvIsOn { get; set; }
         BackgroundWorker worker = new BackgroundWorker();
-        static sqlRepository repo = new sqlRepository();
+        static SqlRepository repo = new SqlRepository();
 
         /// <summary>
         /// Execute this on when u set TvIsOn to true.
@@ -97,6 +95,9 @@ namespace Television
                     }
 
                 }
+
+                //Er mag een kleine timeout zitten tussen executies om de processor wat te sparen
+                System.Threading.Thread.Sleep(100);
 
             }
             ///A ui elememt can only be accessed by one UI Thread. CheckBox Requires UI Thread and your timer runs on different thread. 
