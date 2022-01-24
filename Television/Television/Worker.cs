@@ -12,15 +12,25 @@ namespace Television
 {
     public sealed class Worker
     {
-        private static readonly Lazy<Worker> lazy = new Lazy<Worker>(() => new Worker());
-        public static Worker Instance { get { return lazy.Value; } }
-        public bool TvIsOn { get; set; }
-        BackgroundWorker worker = new BackgroundWorker();
-        static sqlRepository repo = new sqlRepository();
+        private static Lazy<Worker> lazy;
+        public static Worker Instance
+        {
+            get
+            {
+                if (lazy?.Value == null) lazy = new Lazy<Worker>(() => new Worker());
+                return lazy.Value;
+            }
+        }
+
+
         private Worker()
         {
             worker.DoWork += Worker_DoWork;
         }
+
+        public bool TvIsOn { get; set; }
+        BackgroundWorker worker = new BackgroundWorker();
+        static sqlRepository repo = new sqlRepository();
 
         /// <summary>
         /// Execute this on when u set TvIsOn to true.
@@ -34,7 +44,7 @@ namespace Television
             worker.WorkerSupportsCancellation = true;
             worker.CancelAsync();
         }
-    private void Worker_DoWork(object sender, DoWorkEventArgs e)
+        private void Worker_DoWork(object sender, DoWorkEventArgs e)
         {
             while (TvIsOn)
             {
@@ -90,11 +100,11 @@ namespace Television
                 }
 
             }
-                ///A ui elememt can only be accessed by one UI Thread. CheckBox Requires UI Thread and your timer runs on different thread. 
-                ///Simple code to use Dispatcher
-                ///if you receive error an object reference is required for the non-static field, method.
-                ///
-                //Try catch om error te voorkomen wanneer de gebruiker de toepassing sluit (via sluitknop) wanneer de tv staat nog aan.
+            ///A ui elememt can only be accessed by one UI Thread. CheckBox Requires UI Thread and your timer runs on different thread. 
+            ///Simple code to use Dispatcher
+            ///if you receive error an object reference is required for the non-static field, method.
+            ///
+            //Try catch om error te voorkomen wanneer de gebruiker de toepassing sluit (via sluitknop) wanneer de tv staat nog aan.
         }
     }
 }
