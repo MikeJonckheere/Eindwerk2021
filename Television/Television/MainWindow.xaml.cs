@@ -17,9 +17,8 @@ namespace Television
         {
             InitializeComponent();
             repo.SetPowerStatus((byte)0);
-            var worker = Worker.Instance;
-            worker.TvIsOn = true;
-            worker.StartWorking();
+            Worker.Instance.TvIsOn = true;
+            Worker.Instance.StartWorking();
         }
 
         public void btn_OnOff_Click(object sender, RoutedEventArgs e)

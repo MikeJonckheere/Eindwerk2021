@@ -22,7 +22,6 @@ namespace Television
             }
         }
 
-
         private Worker()
         {
             worker.DoWork += Worker_DoWork;
