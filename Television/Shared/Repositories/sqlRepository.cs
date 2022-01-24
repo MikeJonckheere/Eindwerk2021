@@ -8,7 +8,7 @@ namespace Shared.Repositories
     {
         const string _connectionString = "Data Source=.; Initial Catalog=Television;Integrated Security=SSPI;";
 
-        public List<Tele> GetTvSettings()
+        public Tele GetLastTvSettings()
         {
             var result = new List<Tele>();
 
@@ -38,7 +38,31 @@ namespace Shared.Repositories
                 result.Add(tele);
 
             }
-            return result;
+            return result[result.Count - 1];
+        }
+        public Tele GetLastTvCurrentTv()
+        {
+            var result = new List<Tele>();
+
+            string sql = "SELECT TOP 1 Id, Channel, Volume, Source FROM TvCurrent" +
+                         " ORDER BY Id DESC";
+
+            using (var connection = new SqlConnection(_connectionString))
+            using (var command = new SqlCommand(sql, connection))
+            {
+                connection.Open();
+                var reader = command.ExecuteReader();
+                reader.Read();
+
+                var channel = reader.GetInt32(reader.GetOrdinal("Channel"));
+                var volume = reader.GetInt32(reader.GetOrdinal("Volume"));
+                var source = reader.GetInt32(reader.GetOrdinal("Source"));
+
+                var tele = new Tele(channel, volume, source);
+                result.Add(tele);
+            }
+            return result[result.Count - 1];
+
         }
         public List<Tele> GetCurrentTv()
         {
@@ -138,21 +162,20 @@ namespace Shared.Repositories
             using (var connection = new SqlConnection(_connectionString))
             using (var command = new SqlCommand(sql, connection))
             {
-                var results = GetCurrentTv();
-                foreach (var result in results)
+                var tv = GetLastTvCurrentTv();
+
+                if (tv.Channel == 999)
                 {
-                    if (result.Channel == 999)
-                    {
-                        result.Channel = 1;
-                    }
-                    else
-                    {
-                        result.Channel++;
-                    }
-                    command.Parameters.AddWithValue("@Channel", result.Channel);
-                    command.Parameters.AddWithValue("@Volume", result.Volume);
-                    command.Parameters.AddWithValue("@Source", result.Source);
+                    tv.Channel = 1;
                 }
+                else
+                {
+                    tv.Channel++;
+                }
+                command.Parameters.AddWithValue("@Channel", tv.Channel);
+                command.Parameters.AddWithValue("@Volume", tv.Volume);
+                command.Parameters.AddWithValue("@Source", tv.Source);
+
                 connection.Open();
                 command.ExecuteNonQuery();
 
@@ -164,21 +187,20 @@ namespace Shared.Repositories
             using (var connection = new SqlConnection(_connectionString))
             using (var command = new SqlCommand(sql, connection))
             {
-                var results = GetCurrentTv();
-                foreach (var result in results)
+                var tv = GetLastTvCurrentTv();
+
+                if (tv.Channel == 1)
                 {
-                    if (result.Channel == 1)
-                    {
-                        result.Channel = 999;
-                    }
-                    else
-                    {
-                        result.Channel--;
-                    }
-                    command.Parameters.AddWithValue("@Channel", result.Channel);
-                    command.Parameters.AddWithValue("@Volume", result.Volume);
-                    command.Parameters.AddWithValue("@Source", result.Source);
+                    tv.Channel = 999;
                 }
+                else
+                {
+                    tv.Channel--;
+                }
+                command.Parameters.AddWithValue("@Channel", tv.Channel);
+                command.Parameters.AddWithValue("@Volume", tv.Volume);
+                command.Parameters.AddWithValue("@Source", tv.Source);
+
                 connection.Open();
                 command.ExecuteNonQuery();
             }
@@ -189,21 +211,19 @@ namespace Shared.Repositories
             using (var connection = new SqlConnection(_connectionString))
             using (var command = new SqlCommand(sql, connection))
             {
-                var results = GetCurrentTv();
-                foreach (var result in results)
+                var tv = GetLastTvCurrentTv();
+                if (tv.Volume == 100)
                 {
-                    if (result.Volume == 100)
-                    {
-                        result.Volume = 100;
-                    }
-                    else
-                    {
-                        result.Volume++;
-                    }
-                    command.Parameters.AddWithValue("@Channel", result.Channel);
-                    command.Parameters.AddWithValue("@Volume", result.Volume);
-                    command.Parameters.AddWithValue("@Source", result.Source);
+                    tv.Volume = 100;
                 }
+                else
+                {
+                    tv.Volume++;
+                }
+                command.Parameters.AddWithValue("@Channel", tv.Channel);
+                command.Parameters.AddWithValue("@Volume", tv.Volume);
+                command.Parameters.AddWithValue("@Source", tv.Source);
+
                 connection.Open();
                 command.ExecuteNonQuery();
 
@@ -215,21 +235,19 @@ namespace Shared.Repositories
             using (var connection = new SqlConnection(_connectionString))
             using (var command = new SqlCommand(sql, connection))
             {
-                var results = GetCurrentTv();
-                foreach (var result in results)
+                var tv = GetLastTvCurrentTv();
+                if (tv.Volume == 0)
                 {
-                    if (result.Volume == 0)
-                    {
-                        result.Volume = 0;
-                    }
-                    else
-                    {
-                        result.Volume--;
-                    }
-                    command.Parameters.AddWithValue("@Channel", result.Channel);
-                    command.Parameters.AddWithValue("@Volume", result.Volume);
-                    command.Parameters.AddWithValue("@Source", result.Source);
+                    tv.Volume = 0;
                 }
+                else
+                {
+                    tv.Volume--;
+                }
+                command.Parameters.AddWithValue("@Channel", tv.Channel);
+                command.Parameters.AddWithValue("@Volume", tv.Volume);
+                command.Parameters.AddWithValue("@Source", tv.Source);
+
                 connection.Open();
                 command.ExecuteNonQuery();
 
@@ -241,29 +259,27 @@ namespace Shared.Repositories
             using (var connection = new SqlConnection(_connectionString))
             using (var command = new SqlCommand(sql, connection))
             {
-                var results = GetCurrentTv();
-                foreach (var result in results)
-                {
-                    if (result.Source == 1)
+                var tv = GetLastTvCurrentTv();
+                    if (tv.Source == 1)
                     {
-                        result.Source++;
-                        result.Channel = 0;
+                        tv.Source++;
+                        tv.Channel = 0;
                     }
-                    else if (result.Source == 2)
+                    else if (tv.Source == 2)
                     {
-                        result.Source++;
-                        result.Channel = 0;
+                        tv.Source++;
+                        tv.Channel = 0;
                     }
                     else
                     {
-                        result.Source = 1;
-                        result.Channel = 1;
+                        tv.Source = 1;
+                        tv.Channel = 1;
                     }
 
-                    command.Parameters.AddWithValue("@Channel", result.Channel);
-                    command.Parameters.AddWithValue("@Volume", result.Volume);
-                    command.Parameters.AddWithValue("@Source", result.Source);
-                }
+                    command.Parameters.AddWithValue("@Channel", tv.Channel);
+                    command.Parameters.AddWithValue("@Volume", tv.Volume);
+                    command.Parameters.AddWithValue("@Source", tv.Source);
+
                 connection.Open();
                 command.ExecuteNonQuery();
 

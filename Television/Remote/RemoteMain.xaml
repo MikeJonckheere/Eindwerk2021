@@ -36,9 +36,9 @@
             <Button x:Name="btn_Num7" Style="{DynamicResource RoundCorner}" Content="7" HorizontalAlignment="Center" Margin="10" Height="60" Width="60" IsEnabled="False" FontWeight="Bold" FontSize="18" FontFamily="Arial" Click="btn_Num7_Click"/>
             <Expander x:Name="exp_Source" Header="Source"  HorizontalAlignment="Center" Margin="10" ExpandDirection="Down" Visibility="Visible" FontFamily="Arial" Background="{x:Null}" FontWeight="Normal" Grid.ColumnSpan="3" Grid.Row="2">
                 <StackPanel>
-                    <Button x:Name="btn_TV" Style="{DynamicResource RoundCorner}" Content="TV" HorizontalAlignment="Center" Margin="2" Width="60"/>
-                    <Button x:Name="btn_HDMI1" Style="{DynamicResource RoundCorner}" Content="HDMI 1" HorizontalAlignment="Center" Margin="2" Width="60"/>
-                    <Button x:Name="btn_HDMI2" Style="{DynamicResource RoundCorner}" Content="HDMI 2" HorizontalAlignment="Center" Margin="2"  Width="60"/>
+                    <Button x:Name="btn_TV" Style="{DynamicResource RoundCorner}" Content="TV" HorizontalAlignment="Center" Margin="2" Width="60" Click="btn_TV_Click"/>
+                    <Button x:Name="btn_HDMI1" Style="{DynamicResource RoundCorner}" Content="HDMI 1" HorizontalAlignment="Center" Margin="2" Width="60" Click="btn_HDMI1_Click"/>
+                    <Button x:Name="btn_HDMI2" Style="{DynamicResource RoundCorner}" Content="HDMI 2" HorizontalAlignment="Center" Margin="2"  Width="60" Click="btn_HDMI2_Click"/>
                 </StackPanel>
             </Expander>
            
@@ -56,9 +56,10 @@
             <Button x:Name="btn_Num3" Style="{DynamicResource RoundCorner}" Content="3" HorizontalAlignment="Center" Margin="10" Height="60" Width="60" IsEnabled="False" FontWeight="Bold" FontSize="18" FontFamily="Arial" Click="btn_Num3_Click"/>
             <Button x:Name="btn_Num6" Style="{DynamicResource RoundCorner}" Content="6" HorizontalAlignment="Center" Margin="10" Height="60" Width="60" IsEnabled="False" FontWeight="Bold" FontSize="18" FontFamily="Arial" Click="btn_Num6_Click"/>
             <Button x:Name="btn_Num9" Style="{DynamicResource RoundCorner}" Content="9" HorizontalAlignment="Center" Margin="10" Height="60" Width="60" IsEnabled="False" FontWeight="Bold" FontSize="18" FontFamily="Arial" Click="btn_Num9_Click"/>
-            <Expander x:Name="exp_Settings" Header="Settings" HorizontalAlignment="Center" Margin="10"  FontFamily="Arial" Grid.Column="2" Grid.Row="2">
+            <Expander x:Name="exp_Settings" Header="Settings" HorizontalAlignment="Center" Margin="10"  FontFamily="Arial" Grid.Column="2" Grid.Row="2" Height="120">
                 <StackPanel>
-                    <Button x:Name="btn_Volume" Style="{DynamicResource RoundCorner}" Content="Volume" HorizontalAlignment="Center" Margin="2" Width="60"/>
+                    <Button x:Name="btn_Volume_Up" Style="{DynamicResource RoundCorner}" Content="Volume Up" Width="60" Click="btn_Volume_Up_Click" Height="18"/>
+                    <Button x:Name="btn_Volume_Down" Style="{DynamicResource RoundCorner}" Content="Volume Down" Width="60" Click="btn_Volume_Down_Click"/>
                 </StackPanel>
             </Expander>
         </StackPanel>

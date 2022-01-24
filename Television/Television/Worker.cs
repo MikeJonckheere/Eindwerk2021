@@ -51,27 +51,25 @@ namespace Television
                     {
                         Application.Current.Dispatcher.Invoke(() =>
                         {
-                            var tvs = repo.GetCurrentTv();
-                            foreach (var tv in tvs)
+                            var tv = repo.GetLastTvCurrentTv();
+                            switch (tv.Source)
                             {
-                                switch (tv.Source)
-                                {
-                                    case 1:
-                                        ((MainWindow)System.Windows.Application.Current.MainWindow).txt_CurrentSource.Text = "Current Source: tv";
-                                        break;
-                                    case 2:
-                                        ((MainWindow)System.Windows.Application.Current.MainWindow).txt_CurrentSource.Text = "Current Source: hdmi1";
-                                        break;
-                                    case 3:
-                                        ((MainWindow)System.Windows.Application.Current.MainWindow).txt_CurrentSource.Text = "Current Source: hdmi2";
-                                        break;
+                                case 1:
+                                    ((MainWindow)System.Windows.Application.Current.MainWindow).txt_CurrentSource.Text = "Current Source: tv";
+                                    break;
+                                case 2:
+                                    ((MainWindow)System.Windows.Application.Current.MainWindow).txt_CurrentSource.Text = "Current Source: hdmi1";
+                                    break;
+                                case 3:
+                                    ((MainWindow)System.Windows.Application.Current.MainWindow).txt_CurrentSource.Text = "Current Source: hdmi2";
+                                    break;
 
-                                    default:
-                                        break;
-                                }
-                                ((MainWindow)System.Windows.Application.Current.MainWindow).txt_CurrentChannel.Text = "Current Channel: " + tv.Channel.ToString();
-                                ((MainWindow)System.Windows.Application.Current.MainWindow).txt_CurrentVolume.Text = "Current Volume: " + tv.Volume.ToString();
+                                default:
+                                    break;
                             }
+                                ((MainWindow)System.Windows.Application.Current.MainWindow).txt_CurrentChannel.Text = "Current Channel: " + tv.Channel.ToString();
+                            ((MainWindow)System.Windows.Application.Current.MainWindow).txt_CurrentVolume.Text = "Current Volume: " + tv.Volume.ToString();
+
                         });
                     }
                     catch (OperationCanceledException)

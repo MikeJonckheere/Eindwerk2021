@@ -23,14 +23,11 @@ namespace Television
 
         public void btn_OnOff_Click(object sender, RoutedEventArgs e)
         {
-            var tvs = repo.GetTvSettings();
+            var tv = repo.GetLastTvSettings();
             // update on/off button
             if (!repo.GetPowerStatus())
             {
-                foreach (var tv in tvs)
-                {
-                    repo.SetCurrentTv(tv.Channel, tv.Volume, tv.Source);
-                }
+                repo.SetCurrentTv(tv.Channel, tv.Volume, tv.Source);
                 repo.SetPowerStatus((byte)1);
             }
             else
@@ -51,7 +48,7 @@ namespace Television
         private void btn_ChannelUp_Click(object sender, RoutedEventArgs e)
         {
             //aanvullen bij source 2 (hdmi1) en 3 (hdmi2) niet mogelijk om kanalen te wijzigen
-            if (repo.GetPowerStatus() && repo.GetSource()==1)
+            if (repo.GetPowerStatus() && repo.GetSource() == 1)
             {
                 repo.ChannelUp();
             }
@@ -60,7 +57,7 @@ namespace Television
         private void btn_ChannelDown_Click(object sender, RoutedEventArgs e)
         {
             //aanvullen bij source 2 (hdmi1) en 3 (hdmi2) niet mogelijk om kanalen te wijzigen
-            if (repo.GetPowerStatus() && repo.GetSource()==1)
+            if (repo.GetPowerStatus() && repo.GetSource() == 1)
             {
                 repo.ChannelDown();
             }
@@ -90,6 +87,6 @@ namespace Television
             {
                 repo.SetSource();
             }
-            }
         }
+    }
 }

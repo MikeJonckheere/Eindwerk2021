@@ -22,10 +22,14 @@ namespace Remote
     public partial class MainWindow : Window
     {
         static SqlRepository repo = new SqlRepository();
+        private static bool _volumeSaved = true;
 
-        static bool OnOff = false; // we moeten dit een prop van maken + nog van de sql halen zodat het aangepast wordt bij wijzigen van tv. ook worker mss of iets anders? 
-        static string Keypad;
-        static int Channel;
+        static bool OnOff { get; set; } = false; // we moeten dit een prop van maken + nog van de sql halen zodat het aangepast wordt bij wijzigen van tv. ook worker mss of iets anders? 
+        static string Keypad { get; set; }
+        static int Channel { get; set; }
+        private int Source { get; set; }
+
+        public static int Volume { get; private set; }
 
         public MainWindow()
         {
@@ -50,7 +54,8 @@ namespace Remote
         {
             UpdateLoggingBox("Verzenden naar DB");
 
-            repo.SetCurrentTv(Channel, 10, 1);
+            repo.SetCurrentTv(Channel, Volume, Source);
+            _volumeSaved = true;
         }
 
         private void btn_OnoffR_Click(object sender, RoutedEventArgs e)
@@ -152,6 +157,69 @@ namespace Remote
             UpdateLoggingBox($"Ingevoerde kanaal: {Channel}");
         }
 
+        private void btn_TV_Click(object sender, RoutedEventArgs e)
+        {
+            //1 = Current Source: tv"
+            //2 = Current Source: hdmi1"
+            //3 = Current Source: hdmi2"
+            Source = 1;
 
+            UpdateLoggingBox("Source naar: TV");
+        }
+
+        private void btn_HDMI1_Click(object sender, RoutedEventArgs e)
+        {
+            //1 = Current Source: tv"
+            //2 = Current Source: hdmi1"
+            //3 = Current Source: hdmi2"
+            Source = 2;
+
+            UpdateLoggingBox("Source naar: HDMI1");
+        }
+
+        private void btn_HDMI2_Click(object sender, RoutedEventArgs e)
+        {
+            //1 = Current Source: tv"
+            //2 = Current Source: hdmi1"
+            //3 = Current Source: hdmi2"
+            Source = 3;
+
+            UpdateLoggingBox("Source naar: HDMI2");
+        }
+
+        private void btn_Volume_Up_Click(object sender, RoutedEventArgs e)
+        {
+            VolumeUp();
+        }
+
+        private void VolumeUp()
+        {
+            GetVolumeIfUnsaved();
+            if (Volume < 10) Volume += 1;
+            _volumeSaved = false;
+            UpdateLoggingBox($"Volume: {Volume}");
+        }
+
+        private static void GetVolumeIfUnsaved()
+        {
+            if (_volumeSaved)
+            {
+                var tv = repo.GetLastTvCurrentTv();
+                Volume = tv.Volume;
+            }
+        }
+
+        private void btn_Volume_Down_Click(object sender, RoutedEventArgs e)
+        {
+            btnDown();
+        }
+
+        private void btnDown()
+        {
+            GetVolumeIfUnsaved();
+            if (Volume > 0) Volume -= 1;
+            _volumeSaved = false;
+            UpdateLoggingBox($"Volume: {Volume}");
+        }
     }
 }
