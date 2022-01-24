@@ -142,6 +142,7 @@ namespace Remote
         }
         public void Keypad(string input) //input van keypad.
         {
+            //als huidig aantal nummers 3 (of groter); dan reset je eerst de kepad naar een lege string zodat je weer opnieuw begint intypen
             if (keypad?.Length >= 3)
                 keypad = string.Empty;
 
