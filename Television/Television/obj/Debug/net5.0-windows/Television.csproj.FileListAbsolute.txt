@@ -49,3 +49,6 @@ C:\Users\fliefhooghe\Google Drive\Syntrawest\net deel\eindwerk2021\Television\Te
 C:\Users\fliefhooghe\Google Drive\Syntrawest\net deel\eindwerk2021\Television\Television\obj\Debug\net5.0-windows\ref\Television.dll
 C:\Users\fliefhooghe\Google Drive\Syntrawest\net deel\eindwerk2021\Television\Television\obj\Debug\net5.0-windows\Television.pdb
 C:\Users\fliefhooghe\Google Drive\Syntrawest\net deel\eindwerk2021\Television\Television\obj\Debug\net5.0-windows\Television.genruntimeconfig.cache
+D:\Projecten\C#\groepswerktv\Eindwerk2021\Television\Television\obj\Debug\net5.0-windows\Television.dll
+D:\Projecten\C#\groepswerktv\Eindwerk2021\Television\Television\obj\Debug\net5.0-windows\ref\Television.dll
+D:\Projecten\C#\groepswerktv\Eindwerk2021\Television\Television\obj\Debug\net5.0-windows\Television.pdb
