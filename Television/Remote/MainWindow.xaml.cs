@@ -21,7 +21,7 @@ namespace Remote
     /// </summary>
     public partial class MainWindow : Window
     {
-        
+
 
         static bool Onoff = false; // we moeten dit een prop van maken + nog van de sql halen zodat het aangepast wordt bij wijzigen van tv. ook worker mss of iets anders? 
         static string keypad;
@@ -35,10 +35,15 @@ namespace Remote
         }
 
         public void UpdateLoggingBox(string newevent) //stuur een string met de event naar hier.
-        { 
+        {
             DateTime date1 = DateTime.Now;
             newevent = date1.ToLongTimeString() + "=> " + newevent;
             lbox_Logging.Items.Add(newevent);
+
+            //Laatste Item Selecteren
+            lbox_Logging.SelectedIndex = lbox_Logging.Items.Count - 1;
+            lbox_Logging.ScrollIntoView(lbox_Logging.SelectedItem);
+
         }
 
         private void btn_Send_Click(object sender, RoutedEventArgs e)
@@ -50,7 +55,7 @@ namespace Remote
 
         private void btn_OnoffR_Click(object sender, RoutedEventArgs e)
         {
-            
+
             if (!Onoff)
             {
                 Onoff = true;
@@ -137,12 +142,13 @@ namespace Remote
         }
         public void Keypad(string input) //input van keypad.
         {
-            
-            
-            keypad = keypad + string.Join("", input);
+            if (keypad?.Length >= 3)
+                keypad = string.Empty;
+
+            keypad = keypad + input;
             channel = int.Parse(keypad);
-            
-            UpdateLoggingBox("Ingevoerde kanaal: "+channel);
+
+            UpdateLoggingBox($"Ingevoerde kanaal: {channel}");
         }
 
 
