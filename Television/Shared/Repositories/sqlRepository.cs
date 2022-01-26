@@ -260,25 +260,25 @@ namespace Shared.Repositories
             using (var command = new SqlCommand(sql, connection))
             {
                 var tv = GetLastTvCurrentTv();
-                    if (tv.Source == 1)
-                    {
-                        tv.Source++;
-                        tv.Channel = 0;
-                    }
-                    else if (tv.Source == 2)
-                    {
-                        tv.Source++;
-                        tv.Channel = 0;
-                    }
-                    else
-                    {
-                        tv.Source = 1;
-                        tv.Channel = 1;
-                    }
+                if (tv.Source == 1)
+                {
+                    tv.Source++;
+                    tv.Channel = 0;
+                }
+                else if (tv.Source == 2)
+                {
+                    tv.Source++;
+                    tv.Channel = 0;
+                }
+                else
+                {
+                    tv.Source = 1;
+                    tv.Channel = 1;
+                }
 
-                    command.Parameters.AddWithValue("@Channel", tv.Channel);
-                    command.Parameters.AddWithValue("@Volume", tv.Volume);
-                    command.Parameters.AddWithValue("@Source", tv.Source);
+                command.Parameters.AddWithValue("@Channel", tv.Channel);
+                command.Parameters.AddWithValue("@Volume", tv.Volume);
+                command.Parameters.AddWithValue("@Source", tv.Source);
 
                 connection.Open();
                 command.ExecuteNonQuery();
@@ -287,8 +287,7 @@ namespace Shared.Repositories
 
 
         }
-
-
-
     }
+
+
 }

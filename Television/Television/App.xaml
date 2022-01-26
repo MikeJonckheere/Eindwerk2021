@@ -4,6 +4,16 @@
              xmlns:local="clr-namespace:Television"
              StartupUri="TelevisionMain.xaml">
     <Application.Resources>
-         
+
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Theme/RoundCornerTheme.xaml"/>
+
+            </ResourceDictionary.MergedDictionaries>
+
+
+
+        </ResourceDictionary>
+
     </Application.Resources>
 </Application>

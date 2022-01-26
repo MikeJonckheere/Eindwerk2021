@@ -10,5 +10,8 @@
     <Page Update="TelevisionMain.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Theme\RoundCornerTheme.xaml">
+      <SubType>Designer</SubType>
+    </Page>
   </ItemGroup>
 </Project>
