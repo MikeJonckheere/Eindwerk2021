@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "CJ4sLq6jKQYLXhNNpzIouKlOaPYUzoCChmdUFamLKsPZbI+CKMj06eSCpgYSZxFgB0MklumpALotuBE/VOuBIg==",
+  "dgSpecHash": "rf4g++R7jNoeNTvtwDN1cgUcmNcgBzAXA0wsjgUTo3Qs6PgyVuyhcKXX5BSJL6u36mW3g6UqCC40S4RmTKR44w==",
   "success": true,
-  "projectFilePath": "D:\\Downloads\\Eindwerk2021\\Television\\Shared\\Shared.csproj",
+  "projectFilePath": "D:\\Downloads\\Eindwerk2021 Brecht\\Television\\Shared\\Shared.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\brechtw.ITM\\.nuget\\packages\\system.data.sqlclient\\4.8.3\\system.data.sqlclient.4.8.3.nupkg.sha512"
   ],

@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-G:\.shortcut-targets-by-id\1UaJwaTOuCGgMK0kczsN1XU509BAEVgRV\Eindwerkv2\Television\Television\obj\Debug\net5.0-windows\
+D:\Projecten\C#\groepswerktv\Eindwerk2021\Television\Television\obj\Debug\net5.0-windows\
 Television
 none
 false
 TRACE;DEBUG;NET;NET5_0;NETCOREAPP
-G:\.shortcut-targets-by-id\1UaJwaTOuCGgMK0kczsN1XU509BAEVgRV\Eindwerkv2\Television\Television\App.xaml
+D:\Projecten\C#\groepswerktv\Eindwerk2021\Television\Television\App.xaml
 21526832597
 
 8-137186698
-194-1929088688
+1941725473918
 MainWindow.xaml;Theme\RoundCornerTheme.xaml;
 
-False
+True
 

@@ -221,7 +221,7 @@ namespace Remote {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Remote;component/remotemain.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Remote;V1.0.0.0;component/remotemain.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\RemoteMain.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
