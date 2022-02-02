@@ -1,0 +1,102 @@
+﻿<Window x:Name="Remote" x:Class="Remote.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Remote"
+        mc:Ignorable="d"
+        Title="Remote" 
+        Height="800" 
+        Width="300" 
+        ResizeMode="NoResize" 
+        WindowStartupLocation="CenterScreen"        
+        WindowStyle="None" 
+        Background="Transparent" 
+        AllowsTransparency="True" 
+        MouseMove="Window_MouseMove">
+
+
+
+    <Border Background="#FF727272" BorderBrush="#FF252525" BorderThickness="25" CornerRadius="30">
+        <DockPanel>
+            <Grid DockPanel.Dock="Top">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+
+                    <ColumnDefinition Width="1*"/>
+
+                    <ColumnDefinition Width="1*"/>
+
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50"/>
+
+                    <RowDefinition Height="325"/>
+
+
+                    <RowDefinition Height="160"/>
+                    <RowDefinition Height="250"/>
+                </Grid.RowDefinitions>
+
+                <Button x:Name="btn_Onoff" Content="On/Off" Style="{DynamicResource RoundCorner}" HorizontalAlignment="Center" Grid.Column="0" Height="40" Width="70" FontFamily="Arial" Click="btn_Onoff_Click"/>
+                <Button x:Name="btn_Send" Content="Send" Style="{DynamicResource RoundCorner}" HorizontalAlignment="Center" Grid.Column="1" Height="40" Width="60" FontFamily="Arial" Click="btn_Send_Click"/>
+                <Button x:Name="btn_Closeapp" Content="Close App" Style="{DynamicResource RoundCorner}" HorizontalAlignment="Center" Height="40" Width="70" FontFamily="Arial" Grid.Column="2" Click="btn_Closeapp_Click"/>
+
+                <StackPanel Grid.Row="1" Grid.Column="0" Orientation="Vertical">
+
+                    <Button x:Name="btn_Num1" Content="1" Style="{DynamicResource RoundCorner}" HorizontalAlignment="Center" Margin="10" Height="60" Width="60" FontWeight="Bold" FontSize="18" FontFamily="Arial" Click="btn_Numpad_Click"/>
+                    <Button x:Name="btn_Num4" Content="4" Style="{DynamicResource RoundCorner}" HorizontalAlignment="Center" Margin="10" Height="60" Width="60" FontWeight="Bold" FontSize="18" FontFamily="Arial" Click="btn_Numpad_Click"/>
+                    <Button x:Name="btn_Num7" Content="7" Style="{DynamicResource RoundCorner}" HorizontalAlignment="Center" Margin="10" Height="60" Width="60" FontWeight="Bold" FontSize="18" FontFamily="Arial" Click="btn_Numpad_Click"/>
+
+                </StackPanel>
+
+                <StackPanel Grid.Row="1" Grid.Column="1" Orientation="Vertical">
+                    <Button x:Name="btn_Num2" Content="2" Style="{DynamicResource RoundCorner}" HorizontalAlignment="Center" Margin="10" Height="60" Width="60" FontWeight="Bold" FontSize="18" FontFamily="Arial" Click="btn_Numpad_Click"/>
+                    <Button x:Name="btn_Num5" Content="5" Style="{DynamicResource RoundCorner}" HorizontalAlignment="Center" Margin="10" Height="60" Width="60" FontWeight="Bold" FontSize="18" FontFamily="Arial" Click="btn_Numpad_Click"/>
+                    <Button x:Name="btn_Num8" Content="8" Style="{DynamicResource RoundCorner}" HorizontalAlignment="Center" Margin="10" Height="60" Width="60" FontWeight="Bold" FontSize="18" FontFamily="Arial" Click="btn_Numpad_Click"/>
+                    <Button x:Name="btn_Num0" Content="0" Style="{DynamicResource RoundCorner}" HorizontalAlignment="Center" Margin="10" Height="60" Width="60" FontWeight="Bold" FontSize="18" FontFamily="Arial" Click="btn_Numpad_Click"/>
+
+                </StackPanel>
+                <StackPanel Grid.Row="1" Grid.Column="2">
+                    <Button x:Name="btn_Num3" Content="3" Style="{DynamicResource RoundCorner}" HorizontalAlignment="Center" Margin="10" Height="60" Width="60" FontWeight="Bold" FontSize="18" FontFamily="Arial" Click="btn_Numpad_Click"/>
+                    <Button x:Name="btn_Num6" Content="6" Style="{DynamicResource RoundCorner}" HorizontalAlignment="Center" Margin="10" Height="60" Width="60" FontWeight="Bold" FontSize="18" FontFamily="Arial" Click="btn_Numpad_Click"/>
+                    <Button x:Name="btn_Num9" Content="9" Style="{DynamicResource RoundCorner}" HorizontalAlignment="Center" Margin="10" Height="60" Width="60" FontWeight="Bold" FontSize="18" FontFamily="Arial" Click="btn_Numpad_Click"/>
+                </StackPanel>
+
+                <StackPanel Grid.Row="2" Grid.Column="0">
+                    <Button x:Name="btn_ChannelUp" Content="+" Style="{DynamicResource RoundCorner}" HorizontalAlignment="Center" Margin="10" Height="30" Width="30" FontFamily="Arial" Click="btn_ChannelUp_Click"/>
+                    <TextBlock x:Name ="txt_Channel" HorizontalAlignment="Center" Margin="10" Text="Channel" TextWrapping="Wrap"/>
+                    <Button x:Name="btn_ChannelDown" Content="-" Style="{DynamicResource RoundCorner}" HorizontalAlignment="Center" Margin="10" Height="30" Width="30" FontFamily="Arial" Click="btn_ChannelDown_Click"/>
+                </StackPanel>
+
+                <StackPanel Grid.Row="2" Grid.Column="1">
+                    <Button x:Name="btn_Source" Content="Source" Style="{DynamicResource RoundCorner}" HorizontalAlignment="Center" Margin="10" Height="60" Width="60" FontFamily="Arial" Click="btn_Source_Click"/>
+
+                    <Button x:Name="btn_Settings" Content="Settings" Style="{DynamicResource RoundCorner}" HorizontalAlignment="Center" Margin="10" Height="60" Width="60" FontFamily="Arial" Click="btn_Settings_Click"/>
+
+                </StackPanel>
+
+                <StackPanel Grid.Row="2" Grid.Column="2">
+                    <Button x:Name="btn_VolumeUp" Content="+" Style="{DynamicResource RoundCorner}" HorizontalAlignment="Center" Margin="10" Height="30" Width="30" FontFamily="Arial" Click ="btn_VolumeUp_Click"/>
+                    <TextBlock x:Name ="txt_Volume" HorizontalAlignment="Center" Margin="10" Text="Volume" TextWrapping="Wrap"/>
+                    <Button x:Name="btn_VolumeDown" Content="-" Style="{DynamicResource RoundCorner}" HorizontalAlignment="Center" Margin="10" Height="30" Width="30" FontFamily="Arial" Click="btn_VolumeDown_Click"/>
+                </StackPanel>
+                <StackPanel Grid.Row="3" Grid.ColumnSpan="3">
+                    <TextBox x:Name="txt_Log" HorizontalAlignment="Center" Margin="10" Height="200" Width="230" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="12" ScrollViewer.HorizontalScrollBarVisibility="Disabled"
+         ScrollViewer.VerticalScrollBarVisibility="Auto" TextWrapping="Wrap" AcceptsReturn="True"/>
+                </StackPanel>
+            </Grid>
+        </DockPanel>
+
+
+
+    </Border>
+
+       
+        
+
+
+
+    
+</Window>

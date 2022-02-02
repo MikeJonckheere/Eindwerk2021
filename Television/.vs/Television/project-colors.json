@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "50ecfc5a-a32c-450a-90c0-3ebc34a47ead": {
+      "ProjectGuid": "50ecfc5a-a32c-450a-90c0-3ebc34a47ead",
+      "DisplayName": "Television",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}

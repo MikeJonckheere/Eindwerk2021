@@ -1,11 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.0.32014.148
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31727.386
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Television", "Television\Television.csproj", "{50ECFC5A-A32C-450A-90C0-3EBC34A47EAD}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gedeeld", "Shared\Gedeeld.csproj", "{2B4BF612-5E0D-45D1-863C-7FDDB3194E5A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Television", "Television\Television.csproj", "{50ECFC5A-A32C-450A-90C0-3EBC34A47EAD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +15,6 @@ Global
 		{50ECFC5A-A32C-450A-90C0-3EBC34A47EAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{50ECFC5A-A32C-450A-90C0-3EBC34A47EAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{50ECFC5A-A32C-450A-90C0-3EBC34A47EAD}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2B4BF612-5E0D-45D1-863C-7FDDB3194E5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2B4BF612-5E0D-45D1-863C-7FDDB3194E5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2B4BF612-5E0D-45D1-863C-7FDDB3194E5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2B4BF612-5E0D-45D1-863C-7FDDB3194E5A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
