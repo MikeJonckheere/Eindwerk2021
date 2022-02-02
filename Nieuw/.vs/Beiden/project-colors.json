@@ -1,0 +1,26 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "383e6f1a-3a93-47ef-8447-3405b98a4ad2": {
+      "ProjectGuid": "383e6f1a-3a93-47ef-8447-3405b98a4ad2",
+      "DisplayName": "Television",
+      "ColorIndex": 0
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    },
+    "d461e972-86cf-4716-a99c-e94f801eb360": {
+      "ProjectGuid": "d461e972-86cf-4716-a99c-e94f801eb360",
+      "DisplayName": "Remote",
+      "ColorIndex": 1
+    },
+    "73e4e6fe-dab3-4c5e-a3c9-1c4713b60c3f": {
+      "ProjectGuid": "73e4e6fe-dab3-4c5e-a3c9-1c4713b60c3f",
+      "DisplayName": "Shared",
+      "ColorIndex": 2
+    }
+  },
+  "NextColorIndex": 3
+}

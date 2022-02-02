@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "/OsYIGbL7z7FcdShw03N+2zjVuihXKXyPxSwE4TxBeaY2vSWr64oRza2HMII19o5A8HOBHiSkjhyeqsYqgIDAA==",
+  "success": true,
+  "projectFilePath": "D:\\Downloads\\Eindwerk2021\\Television\\Remote\\Remote.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\brechtw.ITM\\.nuget\\packages\\system.data.sqlclient\\4.8.3\\system.data.sqlclient.4.8.3.nupkg.sha512"
+  ],
+  "logs": []
+}

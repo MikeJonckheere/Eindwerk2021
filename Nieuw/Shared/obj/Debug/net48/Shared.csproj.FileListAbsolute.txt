@@ -1,0 +1,10 @@
+C:\Users\Arne\Desktop\Eindwerk2021\Television\Shared\bin\Debug\net48\Shared.dll
+C:\Users\Arne\Desktop\Eindwerk2021\Television\Shared\bin\Debug\net48\Shared.pdb
+C:\Users\Arne\Desktop\Eindwerk2021\Television\Shared\bin\Debug\net48\System.Data.SqlClient.dll
+C:\Users\Arne\Desktop\Eindwerk2021\Television\Shared\obj\Debug\net48\Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Arne\Desktop\Eindwerk2021\Television\Shared\obj\Debug\net48\Shared.AssemblyInfoInputs.cache
+C:\Users\Arne\Desktop\Eindwerk2021\Television\Shared\obj\Debug\net48\Shared.AssemblyInfo.cs
+C:\Users\Arne\Desktop\Eindwerk2021\Television\Shared\obj\Debug\net48\Shared.csproj.CoreCompileInputs.cache
+C:\Users\Arne\Desktop\Eindwerk2021\Television\Shared\obj\Debug\net48\Shared.csproj.CopyComplete
+C:\Users\Arne\Desktop\Eindwerk2021\Television\Shared\obj\Debug\net48\Shared.dll
+C:\Users\Arne\Desktop\Eindwerk2021\Television\Shared\obj\Debug\net48\Shared.pdb

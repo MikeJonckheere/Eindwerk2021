@@ -1,0 +1,101 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Arne\\Desktop\\Eindwerk2021\\Television\\Remote\\Remote.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Arne\\Desktop\\Eindwerk2021\\Television\\Remote\\Remote.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Arne\\Desktop\\Eindwerk2021\\Television\\Remote\\Remote.csproj",
+        "projectName": "Remote",
+        "projectPath": "C:\\Users\\Arne\\Desktop\\Eindwerk2021\\Television\\Remote\\Remote.csproj",
+        "packagesPath": "C:\\Users\\Arne\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Arne\\Desktop\\Eindwerk2021\\Television\\Remote\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Arne\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net472": {
+            "targetAlias": "net472",
+            "projectReferences": {
+              "C:\\Users\\Arne\\Desktop\\Eindwerk2021\\Television\\Shared\\Shared.csproj": {
+                "projectPath": "C:\\Users\\Arne\\Desktop\\Eindwerk2021\\Television\\Shared\\Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net472": {
+          "targetAlias": "net472",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "win7-x86": {
+          "#import": []
+        }
+      }
+    },
+    "C:\\Users\\Arne\\Desktop\\Eindwerk2021\\Television\\Shared\\Shared.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Arne\\Desktop\\Eindwerk2021\\Television\\Shared\\Shared.csproj",
+        "projectName": "Shared",
+        "projectPath": "C:\\Users\\Arne\\Desktop\\Eindwerk2021\\Television\\Shared\\Shared.csproj",
+        "packagesPath": "C:\\Users\\Arne\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Arne\\Desktop\\Eindwerk2021\\Television\\Shared\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Arne\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net472": {
+            "targetAlias": "net472",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net472": {
+          "targetAlias": "net472",
+          "dependencies": {
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.3, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
