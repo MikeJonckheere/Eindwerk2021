@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9K/Yon/ThM2CppoScn5yF4YJAjvpz84REhDK9z+yXxmf7jZuFC/bvsd0F9CkkOGQXi6nZE2c6RdbQ10I5KKE7Q==",
+  "dgSpecHash": "8UWfRaBhty1feUIc9QjNSieNpiyksAPFjBB3gS0M/rGfe/XvWdTz3381b5AjIK48/S7OmgDeLQepfR+sqpjo1w==",
   "success": true,
-  "projectFilePath": "G:\\.shortcut-targets-by-id\\1UaJwaTOuCGgMK0kczsN1XU509BAEVgRV\\Eindwerkv2\\Remote\\Remote.csproj",
+  "projectFilePath": "C:\\Users\\mikej\\Documents\\Eindwerk2021-22\\Remote\\Remote.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mikej\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\mikej\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",

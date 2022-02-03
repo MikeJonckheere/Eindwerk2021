@@ -1,0 +1,11 @@
+C:\Users\mikej\Desktop\Eindwerkexport\REMOTE\Remote.exe
+C:\Users\mikej\Desktop\Eindwerkexport\REMOTE\Remote.dll
+C:\Users\mikej\Desktop\Eindwerkexport\REMOTE\Remote.deps.json
+C:\Users\mikej\Desktop\Eindwerkexport\REMOTE\Remote.runtimeconfig.json
+C:\Users\mikej\Desktop\Eindwerkexport\REMOTE\Remote.pdb
+C:\Users\mikej\Desktop\Eindwerkexport\REMOTE\System.Data.SqlClient.dll
+C:\Users\mikej\Desktop\Eindwerkexport\REMOTE\runtimes\win-arm64\native\sni.dll
+C:\Users\mikej\Desktop\Eindwerkexport\REMOTE\runtimes\win-x64\native\sni.dll
+C:\Users\mikej\Desktop\Eindwerkexport\REMOTE\runtimes\win-x86\native\sni.dll
+C:\Users\mikej\Desktop\Eindwerkexport\REMOTE\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\mikej\Desktop\Eindwerkexport\REMOTE\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll

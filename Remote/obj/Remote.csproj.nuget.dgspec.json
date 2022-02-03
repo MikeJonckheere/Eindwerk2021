@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "G:\\.shortcut-targets-by-id\\1UaJwaTOuCGgMK0kczsN1XU509BAEVgRV\\Eindwerkv2\\Remote\\Remote.csproj": {}
+    "C:\\Users\\mikej\\Documents\\Eindwerk2021-22\\Remote\\Remote.csproj": {}
   },
   "projects": {
-    "G:\\.shortcut-targets-by-id\\1UaJwaTOuCGgMK0kczsN1XU509BAEVgRV\\Eindwerkv2\\Remote\\Remote.csproj": {
+    "C:\\Users\\mikej\\Documents\\Eindwerk2021-22\\Remote\\Remote.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\.shortcut-targets-by-id\\1UaJwaTOuCGgMK0kczsN1XU509BAEVgRV\\Eindwerkv2\\Remote\\Remote.csproj",
+        "projectUniqueName": "C:\\Users\\mikej\\Documents\\Eindwerk2021-22\\Remote\\Remote.csproj",
         "projectName": "Remote",
-        "projectPath": "G:\\.shortcut-targets-by-id\\1UaJwaTOuCGgMK0kczsN1XU509BAEVgRV\\Eindwerkv2\\Remote\\Remote.csproj",
+        "projectPath": "C:\\Users\\mikej\\Documents\\Eindwerk2021-22\\Remote\\Remote.csproj",
         "packagesPath": "C:\\Users\\mikej\\.nuget\\packages\\",
-        "outputPath": "G:\\.shortcut-targets-by-id\\1UaJwaTOuCGgMK0kczsN1XU509BAEVgRV\\Eindwerkv2\\Remote\\obj\\",
+        "outputPath": "C:\\Users\\mikej\\Documents\\Eindwerk2021-22\\Remote\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

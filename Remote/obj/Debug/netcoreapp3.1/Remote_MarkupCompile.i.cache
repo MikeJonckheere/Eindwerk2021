@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-G:\.shortcut-targets-by-id\1UaJwaTOuCGgMK0kczsN1XU509BAEVgRV\Eindwerkv2\Remote\obj\Debug\netcoreapp3.1\
+C:\Users\mikej\Documents\Eindwerk2021-22\Remote\obj\Debug\netcoreapp3.1\
 Remote
 none
 false
 TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1;
-G:\.shortcut-targets-by-id\1UaJwaTOuCGgMK0kczsN1XU509BAEVgRV\Eindwerkv2\Remote\App.xaml
+C:\Users\mikej\Documents\Eindwerk2021-22\Remote\App.xaml
 21526832597
 
 8-1940406019
 193-1570594910
 MainWindow.xaml;Theme\RoundCornerTheme.xaml;
 
-True
+False
 

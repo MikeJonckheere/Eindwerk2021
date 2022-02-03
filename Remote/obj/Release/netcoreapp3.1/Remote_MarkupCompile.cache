@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\Projecten\C#\groepswerktv\Eindwerk2021\Remote\obj\Release\netcoreapp3.1\
+C:\Users\mikej\Documents\Eindwerk2021-22\Remote\obj\Release\netcoreapp3.1\
 Remote
 none
 false
 TRACE;RELEASE;NETCOREAPP;NETCOREAPP3_1;
-D:\Projecten\C#\groepswerktv\Eindwerk2021\Remote\App.xaml
+C:\Users\mikej\Documents\Eindwerk2021-22\Remote\App.xaml
 21526832597
 
 6-100859376
-192-1533232326
+193-1570594910
 MainWindow.xaml;Theme\RoundCornerTheme.xaml;
 
-True
+False
 

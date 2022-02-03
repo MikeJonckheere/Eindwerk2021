@@ -1,0 +1,11 @@
+C:\Users\mikej\Desktop\Eindwerkexport\TEVEE\Television.exe
+C:\Users\mikej\Desktop\Eindwerkexport\TEVEE\Television.dll
+C:\Users\mikej\Desktop\Eindwerkexport\TEVEE\Television.deps.json
+C:\Users\mikej\Desktop\Eindwerkexport\TEVEE\Television.runtimeconfig.json
+C:\Users\mikej\Desktop\Eindwerkexport\TEVEE\Television.pdb
+C:\Users\mikej\Desktop\Eindwerkexport\TEVEE\System.Data.SqlClient.dll
+C:\Users\mikej\Desktop\Eindwerkexport\TEVEE\runtimes\win-arm64\native\sni.dll
+C:\Users\mikej\Desktop\Eindwerkexport\TEVEE\runtimes\win-x64\native\sni.dll
+C:\Users\mikej\Desktop\Eindwerkexport\TEVEE\runtimes\win-x86\native\sni.dll
+C:\Users\mikej\Desktop\Eindwerkexport\TEVEE\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\mikej\Desktop\Eindwerkexport\TEVEE\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
